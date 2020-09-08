@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>data</key>
+	<dict>
+		<key>config</key>
+		<dict>
+			<key>isCheck</key>
+			<false/>
+			<key>isFestival</key>
+			<string>21</string>
+			<key>version</key>
+			<string>1.0.5</string>
+		</dict>
+		<key>Users</key>
+		<array>
+			<dict>
+				<key>head</key>
+				<string>https://cdn2.jianshu.io/assets/default_avatar/2-9636b13945b9ccf345bc98d0d81074eb.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/120/h/120</string>
+				<key>age</key>
+				<string>20</string>
+				<key>name</key>
+				<string>Claude</string>
+			</dict>
+			<dict>
+				<key>head</key>
+				<string>https://cdn2.jianshu.io/assets/default_avatar/2-9636b13945b9ccf345bc98d0d81074eb.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/120/h/120</string>
+				<key>age</key>
+				<string>21</string>
+				<key>name</key>
+				<string>Claude1</string>
+			</dict>
+			<dict>
+				<key>head</key>
+				<string>https://cdn2.jianshu.io/assets/default_avatar/2-9636b13945b9ccf345bc98d0d81074eb.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/120/h/120</string>
+				<key>age</key>
+				<string>22</string>
+				<key>name</key>
+				<string>Claude2</string>
+			</dict>
+			<dict>
+				<key>head</key>
+				<string>https://cdn2.jianshu.io/assets/default_avatar/2-9636b13945b9ccf345bc98d0d81074eb.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/120/h/120</string>
+				<key>age</key>
+				<string>23</string>
+				<key>name</key>
+				<string>Claude3</string>
+			</dict>
+			<dict>
+				<key>head</key>
+				<string>https://cdn2.jianshu.io/assets/default_avatar/2-9636b13945b9ccf345bc98d0d81074eb.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/120/h/120</string>
+				<key>age</key>
+				<string>24</string>
+				<key>name</key>
+				<string>Claude4</string>
+			</dict>
+		</array>
+	</dict>
+	<key>msg</key>
+	<string>good</string>
+	<key>code</key>
+	<integer>200</integer>
+</dict>
+</plist>
