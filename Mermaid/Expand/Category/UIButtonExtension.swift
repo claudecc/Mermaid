@@ -29,6 +29,10 @@ extension UIButton {
     
     func setImagePosition(position:kImagePosition, spacing:CGFloat) {
         
+        guard let font = self.titleLabel?.font else {
+            return
+        }
+        
         if self.isSelected {
             self.setTitle(self.currentTitle, for: .selected)
             self.setImage(self.currentImage, for: .selected)
@@ -40,16 +44,21 @@ extension UIButton {
         var imageWidth:CGFloat = 0.0
         var imageHeight:CGFloat = 0.0
         if self.currentImage != nil {
-            imageWidth = self.imageView?.image?.size.width ?? 0
-            imageHeight = self.imageView?.image?.size.height ?? 0
+            if let image = self.imageView?.image {
+                imageWidth = image.size.width
+                imageHeight = image.size.height
+            }
         }
         
-        let font = self.titleLabel?.font
-        let maxSize = CGSize(width: 0, height: font?.lineHeight ?? 0)
-        let attributes = [NSAttributedStringKey.font: font]
-        let labelRect = self.titleLabel?.text?.boundingRect(with: maxSize, options:NSStringDrawingOptions.usesLineFragmentOrigin, attributes:attributes as [NSAttributedStringKey : Any], context: nil)
-        let labelWidth:CGFloat = labelRect?.size.width ?? 0
-        let labelHeight:CGFloat = labelRect?.size.height ?? 0
+        let maxSize = CGSize(width: 0, height: font.lineHeight)
+        let attributes = [NSAttributedString.Key.font: font]
+        var labelRect = CGRect.zero
+        if let text = self.titleLabel?.text {
+            labelRect = text.boundingRect(with: maxSize, options:NSStringDrawingOptions.usesLineFragmentOrigin, attributes:attributes as [NSAttributedString.Key : Any], context: nil)
+        }
+        let labelWidth:CGFloat = labelRect.size.width
+        let labelHeight:CGFloat = labelRect.size.height
+        
         
         let imageOffsetX:CGFloat = (imageWidth + labelWidth) / 2 - imageWidth / 2;//image中心移动的x距离
         let imageOffsetY:CGFloat = imageHeight / 2 + spacing / 2;//image中心移动的y距离

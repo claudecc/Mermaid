@@ -24,11 +24,11 @@ extension UITextField {
         let att = NSMutableAttributedString(string: text)
         let range = NSRange(location: 0, length: text.count)
         // 颜色
-        att.addAttributes([NSAttributedStringKey.foregroundColor : color], range: range)
+        att.addAttributes([NSAttributedString.Key.foregroundColor : color], range: range)
         // 对齐
         let style = NSMutableParagraphStyle()
         style.alignment = align
-        att.addAttributes([NSAttributedStringKey.paragraphStyle : style], range: range)
+        att.addAttributes([NSAttributedString.Key.paragraphStyle : style], range: range)
         
         self.attributedPlaceholder = att
     }

@@ -53,30 +53,31 @@ class XDNetwork: NSObject {
                 mutableParas.updateValue(key, forKey: value)
             }
         }
-        Alamofire.request(urlString, method: .get, parameters: parameters, encoding: URLEncoding.default, headers: nil).responseJSON { response in
-//            print(response.request)  // 原始的URL请求
-//            print(response.response) // HTTP URL响应
-//            print(response.data)     // 服务器返回的数据
-//            print(response.result)   // 响应序列化结果，在这个闭包里，存储的是JSON数据
-
-            switch response.result.isSuccess {
-            case true:
-                if let result = response.result.value {
-                    success(result as AnyObject)
-                } else {
-//                    print("没有数据")
-                    failure(nil,"没有数据")
-                }
-            case false:
-                if let error = response.result.error {
-                    debugPrint(error)
-                    failure(error,nil)
-                } else {
-//                    print("网络请求出错")
-                    failure(nil,"网络请求出错")
-                }
-            }
-        }
+        
+//        Alamofire.request(urlString, method: .get, parameters: parameters, encoding: URLEncoding.default, headers: nil).responseJSON { response in
+////            print(response.request)  // 原始的URL请求
+////            print(response.response) // HTTP URL响应
+////            print(response.data)     // 服务器返回的数据
+////            print(response.result)   // 响应序列化结果，在这个闭包里，存储的是JSON数据
+//
+//            switch response.result.isSuccess {
+//            case true:
+//                if let result = response.result.value {
+//                    success(result as AnyObject)
+//                } else {
+////                    print("没有数据")
+//                    failure(nil,"没有数据")
+//                }
+//            case false:
+//                if let error = response.result.error {
+//                    debugPrint(error)
+//                    failure(error,nil)
+//                } else {
+////                    print("网络请求出错")
+//                    failure(nil,"网络请求出错")
+//                }
+//            }
+//        }
     }
     
     /**
@@ -105,26 +106,27 @@ class XDNetwork: NSObject {
 //
 //            }
 //        }
-        Alamofire.request(urlString, method: .post, parameters: parameters, encoding: URLEncoding.default, headers: nil).responseJSON { response in
-            
-            switch response.result.isSuccess {
-            case true:
-                if let result = response.result.value {
-                    success(result as AnyObject)
-                } else {
-                    print("没有数据")
-                    failure(nil,"没有数据")
-                }
-            case false:
-                if let error = response.result.error {
-                    debugPrint(error)
-                    failure(error,nil)
-                } else {
-                    print("网络请求出错")
-                    failure(nil,"网络请求出错")
-                }
-            }
-        }
+        
+//        Alamofire.request(urlString, method: .post, parameters: parameters, encoding: URLEncoding.default, headers: nil).responseJSON { response in
+//
+//            switch response.result.isSuccess {
+//            case true:
+//                if let result = response.result.value {
+//                    success(result as AnyObject)
+//                } else {
+//                    print("没有数据")
+//                    failure(nil,"没有数据")
+//                }
+//            case false:
+//                if let error = response.result.error {
+//                    debugPrint(error)
+//                    failure(error,nil)
+//                } else {
+//                    print("网络请求出错")
+//                    failure(nil,"网络请求出错")
+//                }
+//            }
+//        }
 
     }
     

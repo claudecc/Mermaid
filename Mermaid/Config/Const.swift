@@ -20,7 +20,7 @@ let kWindow = UIApplication.shared.delegate?.window
 
 
 func BLColorFromRGB(rgbValue: UInt32) -> UIColor {
-  
+    
     let temp = UInt32(255.0)
     
     let red = ((rgbValue & 0xFF0000) >> 16) / temp

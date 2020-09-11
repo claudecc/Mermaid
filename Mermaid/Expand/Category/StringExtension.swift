@@ -13,7 +13,7 @@ extension String {
     
     func getWidth(font:UIFont) -> CGFloat {
         let maxSize = CGSize(width: 0, height: font.lineHeight)
-        let attributes = [NSAttributedStringKey.font: font]
+        let attributes = [NSAttributedString.Key.font: font]
         let width = self.boundingRect(with: maxSize, options:NSStringDrawingOptions.usesLineFragmentOrigin, attributes:attributes, context: nil).width
         return width
     }

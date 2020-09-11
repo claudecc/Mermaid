@@ -16,24 +16,20 @@ extension UIImageView {
     }
     
     func xd_setImage(_ url:String?, _ placeholder:UIImage?) {
-        if url == nil {
+        guard let url = url else { return }
+        if url.isEmpty {
             return
         }
-        if url!.isEmpty {
-            return
-        }
-        let imageUrl = URL(string: url!)
+        let imageUrl = URL(string: url)
         self.kf.setImage(with: imageUrl, placeholder: placeholder)
     }
     
     func xd_setCircleImage(_ url:String?, _ placeholder:UIImage?) {
-        if url == nil {
+        guard let url = url else { return }
+        if url.isEmpty {
             return
         }
-        if url!.isEmpty {
-            return
-        }
-        let imageUrl = URL(string: url!)
+        let imageUrl = URL(string: url)
         self.kf.setImage(with: imageUrl, placeholder: placeholder, options: .none, progressBlock: nil) { (Result) in
             
         }
