@@ -86,3 +86,11 @@ class TestMainDataModel: NSObject, Mappable {
         name <- map["name"]
     }
 }
+
+struct BaseHouseModel {
+    
+}
+
+struct HouseModel {
+    
+}

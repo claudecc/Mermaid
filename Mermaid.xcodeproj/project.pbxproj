@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5C00C6D8DA6E9D45E2DD7CA1 /* Pods_Mermaid.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E10A65427842C4B0D4BDBE0 /* Pods_Mermaid.framework */; };
+		E6A72017250B5CC300EB1EB2 /* NFCTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A72016250B5CC300EB1EB2 /* NFCTool.swift */; };
 		E6BC31D52504C43500CCE02E /* MermaidTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BC31D42504C43500CCE02E /* MermaidTests.swift */; };
 		E6BC31E02504C43500CCE02E /* MermaidUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BC31DF2504C43500CCE02E /* MermaidUITests.swift */; };
 		E6BC31F02504C85C00CCE02E /* SLinkListTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BC31EF2504C85C00CCE02E /* SLinkListTool.swift */; };
@@ -74,6 +75,7 @@
 		3E48224AD16B4741C86056CF /* Pods-Mermaid.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mermaid.debug.xcconfig"; path = "Target Support Files/Pods-Mermaid/Pods-Mermaid.debug.xcconfig"; sourceTree = "<group>"; };
 		48A4AD3E248C978473B2BB0A /* Pods-Mermaid.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mermaid.release.xcconfig"; path = "Target Support Files/Pods-Mermaid/Pods-Mermaid.release.xcconfig"; sourceTree = "<group>"; };
 		4E10A65427842C4B0D4BDBE0 /* Pods_Mermaid.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mermaid.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6A72016250B5CC300EB1EB2 /* NFCTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCTool.swift; sourceTree = "<group>"; };
 		E6BC31BA2504C43400CCE02E /* Mermaid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mermaid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6BC31D02504C43400CCE02E /* MermaidTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MermaidTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6BC31D42504C43500CCE02E /* MermaidTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MermaidTests.swift; sourceTree = "<group>"; };
@@ -353,6 +355,7 @@
 				E6BC32162504C86A00CCE02E /* TestNetWorkTool.swift */,
 				E6BC32132504C86A00CCE02E /* TestOCTool.h */,
 				E6BC32152504C86A00CCE02E /* TestOCTool.m */,
+				E6A72016250B5CC300EB1EB2 /* NFCTool.swift */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -686,6 +689,7 @@
 				E6BC32512504C86A00CCE02E /* MeViewModel.swift in Sources */,
 				E6BC32352504C86A00CCE02E /* UIButtonExtension.swift in Sources */,
 				E6BC32462504C86A00CCE02E /* BannerNormalCell.swift in Sources */,
+				E6A72017250B5CC300EB1EB2 /* NFCTool.swift in Sources */,
 				E6BC323C2504C86A00CCE02E /* StringExtension.swift in Sources */,
 				E6BC32372504C86A00CCE02E /* UIViewOrdinate.swift in Sources */,
 				E6BC32432504C86A00CCE02E /* HomeVC.swift in Sources */,
