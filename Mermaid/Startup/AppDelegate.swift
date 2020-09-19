@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import EchoSDK
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -25,6 +26,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.checkLogin()
 
         UIButton.appearance().isExclusiveTouch = false
+        
+        // Echo是一款客户端的桌面端调试工具
+        #if DEBUG
+        ECOClient.shared()?.start()
+        #endif
+        
         return true
     }
 

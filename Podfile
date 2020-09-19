@@ -40,4 +40,7 @@ target 'Mermaid' do
 
   pod 'Bugly'
   
+  # Echo是一款客户端的桌面端调试工具
+  pod 'EchoSDK', :configurations => ["Debug"]
+  
 end

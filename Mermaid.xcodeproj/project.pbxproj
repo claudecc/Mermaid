@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		5C00C6D8DA6E9D45E2DD7CA1 /* Pods_Mermaid.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E10A65427842C4B0D4BDBE0 /* Pods_Mermaid.framework */; };
+		E67B1DFF250E883700D9E101 /* confuse.sh in Resources */ = {isa = PBXBuildFile; fileRef = E67B1DFC250E883700D9E101 /* confuse.sh */; };
+		E67B1E00250E883700D9E101 /* ConfuseIntroduction.md in Resources */ = {isa = PBXBuildFile; fileRef = E67B1DFD250E883700D9E101 /* ConfuseIntroduction.md */; };
+		E67B1E01250E883700D9E101 /* func.list in Resources */ = {isa = PBXBuildFile; fileRef = E67B1DFE250E883700D9E101 /* func.list */; };
 		E6A72017250B5CC300EB1EB2 /* NFCTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A72016250B5CC300EB1EB2 /* NFCTool.swift */; };
 		E6BC31D52504C43500CCE02E /* MermaidTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BC31D42504C43500CCE02E /* MermaidTests.swift */; };
 		E6BC31E02504C43500CCE02E /* MermaidUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BC31DF2504C43500CCE02E /* MermaidUITests.swift */; };
@@ -52,6 +55,7 @@
 		E6BC325A2504C86A00CCE02E /* TestJsonData.plist in Resources */ = {isa = PBXBuildFile; fileRef = E6BC322F2504C86A00CCE02E /* TestJsonData.plist */; };
 		E6BC325B2504C86A00CCE02E /* Note in Resources */ = {isa = PBXBuildFile; fileRef = E6BC32312504C86A00CCE02E /* Note */; };
 		E6BC325C2504C86A00CCE02E /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BC32322504C86A00CCE02E /* Const.swift */; };
+		E6C8FEFD25112F3A00C4B46E /* XDBlackboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C8FEFC25112F3A00C4B46E /* XDBlackboard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +79,11 @@
 		3E48224AD16B4741C86056CF /* Pods-Mermaid.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mermaid.debug.xcconfig"; path = "Target Support Files/Pods-Mermaid/Pods-Mermaid.debug.xcconfig"; sourceTree = "<group>"; };
 		48A4AD3E248C978473B2BB0A /* Pods-Mermaid.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mermaid.release.xcconfig"; path = "Target Support Files/Pods-Mermaid/Pods-Mermaid.release.xcconfig"; sourceTree = "<group>"; };
 		4E10A65427842C4B0D4BDBE0 /* Pods_Mermaid.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mermaid.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E67B1DFC250E883700D9E101 /* confuse.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = confuse.sh; sourceTree = "<group>"; };
+		E67B1DFD250E883700D9E101 /* ConfuseIntroduction.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = ConfuseIntroduction.md; sourceTree = "<group>"; };
+		E67B1DFE250E883700D9E101 /* func.list */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = func.list; sourceTree = "<group>"; };
+		E67B1E02250E8B0100D9E101 /* codeObfuscation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = codeObfuscation.h; sourceTree = "<group>"; };
+		E67B1E04250E8BE200D9E101 /* ConfuseHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConfuseHeader.pch; sourceTree = "<group>"; };
 		E6A72016250B5CC300EB1EB2 /* NFCTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCTool.swift; sourceTree = "<group>"; };
 		E6BC31BA2504C43400CCE02E /* Mermaid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mermaid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6BC31D02504C43400CCE02E /* MermaidTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MermaidTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -128,6 +137,7 @@
 		E6BC32322504C86A00CCE02E /* Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		E6BC32332504C86A00CCE02E /* SwiftLearning-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SwiftLearning-Bridging-Header.h"; sourceTree = "<group>"; };
 		E6BC32342504C86A00CCE02E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6C8FEFC25112F3A00C4B46E /* XDBlackboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDBlackboard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,9 +175,22 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		E67B1DF4250E82AA00D9E101 /* Confuse */ = {
+			isa = PBXGroup;
+			children = (
+				E67B1E02250E8B0100D9E101 /* codeObfuscation.h */,
+				E67B1DFC250E883700D9E101 /* confuse.sh */,
+				E67B1DFD250E883700D9E101 /* ConfuseIntroduction.md */,
+				E67B1DFE250E883700D9E101 /* func.list */,
+				E67B1E04250E8BE200D9E101 /* ConfuseHeader.pch */,
+			);
+			path = Confuse;
+			sourceTree = "<group>";
+		};
 		E6BC31B12504C43300CCE02E = {
 			isa = PBXGroup;
 			children = (
+				E67B1DF4250E82AA00D9E101 /* Confuse */,
 				E6BC31BC2504C43400CCE02E /* Mermaid */,
 				E6BC31D32504C43500CCE02E /* MermaidTests */,
 				E6BC31DE2504C43500CCE02E /* MermaidUITests */,
@@ -356,6 +379,7 @@
 				E6BC32132504C86A00CCE02E /* TestOCTool.h */,
 				E6BC32152504C86A00CCE02E /* TestOCTool.m */,
 				E6A72016250B5CC300EB1EB2 /* NFCTool.swift */,
+				E6C8FEFC25112F3A00C4B46E /* XDBlackboard.swift */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -487,6 +511,7 @@
 				E6BC31B82504C43300CCE02E /* Resources */,
 				E870599EAB253D34836BF21C /* [CP] Embed Pods Frameworks */,
 				C2681FA0C41490561627BD74 /* [CP] Copy Pods Resources */,
+				E67B1DFB250E868B00D9E101 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -585,6 +610,9 @@
 				E6BC32592504C86A00CCE02E /* Assets.xcassets in Resources */,
 				E6BC325B2504C86A00CCE02E /* Note in Resources */,
 				E6BC324E2504C86A00CCE02E /* LaunchScreen.storyboard in Resources */,
+				E67B1E00250E883700D9E101 /* ConfuseIntroduction.md in Resources */,
+				E67B1DFF250E883700D9E101 /* confuse.sh in Resources */,
+				E67B1E01250E883700D9E101 /* func.list in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -644,6 +672,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Mermaid/Pods-Mermaid-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		E67B1DFB250E868B00D9E101 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n$PROJECT_DIR/Confuse/confuse.sh\n";
+		};
 		E870599EAB253D34836BF21C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -674,6 +719,7 @@
 				E6BC31F02504C85C00CCE02E /* SLinkListTool.swift in Sources */,
 				E6BC32472504C86A00CCE02E /* BannerFocusCell.swift in Sources */,
 				E6BC324B2504C86A00CCE02E /* TestJsonModelTool.swift in Sources */,
+				E6C8FEFD25112F3A00C4B46E /* XDBlackboard.swift in Sources */,
 				E6BC32482504C86A00CCE02E /* BannerFocusView.swift in Sources */,
 				E6BC323D2504C86A00CCE02E /* XDInterface.swift in Sources */,
 				E6BC32392504C86A00CCE02E /* NSObjectExtension.swift in Sources */,
@@ -862,6 +908,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KR5AULFCNL;
+				GCC_PREFIX_HEADER = $PROJECT_DIR/Confuse/ConfuseHeader.pch;
 				INFOPLIST_FILE = "$(SRCROOT)/Mermaid/Config/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -882,6 +929,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KR5AULFCNL;
+				GCC_PREFIX_HEADER = $PROJECT_DIR/Confuse/ConfuseHeader.pch;
 				INFOPLIST_FILE = "$(SRCROOT)/Mermaid/Config/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
