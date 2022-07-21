@@ -12,7 +12,18 @@ import PullToRefresh
 class HomeVC: BaseVC, UITableViewDelegate, UITableViewDataSource {
 
     private var tableView : UITableView!
-    private var listArray : NSMutableArray!
+    private var listArray = [
+        ["name": "banner", "vc": BannerVC.self],
+        ["name": "segmentVC", "vc": SegmentVC.self],
+        ["name": "瀑布流", "vc": BaseVC.self],
+        ["name": "红包雨", "vc": BaseVC.self],
+        ["name": "物理动画", "vc": BaseVC.self],
+        ["name": "测试", "vc": TestVC.self],
+        ["name": "日历", "vc": CalendarVC.self],
+        ["name": "Difference", "vc": DifferenceViewController.self],
+        ["name": "TableListViewController", "vc": TableListViewController.self],
+        ["name": "CollectListViewController", "vc": CollectListViewController.self]
+    ]
     
     deinit {
         tableView.removePullToRefresh(at: .top)
@@ -27,7 +38,6 @@ class HomeVC: BaseVC, UITableViewDelegate, UITableViewDataSource {
     }
     
     func setupUI() {
-        listArray = NSMutableArray(array: [["name":"banner","vc":"BannerVC"],["name":"segmentVC","vc":"SegmentVC"],["name":"瀑布流","vc":""],["name":"红包雨","vc":""],["name":"物理动画","vc":""],["name":"测试","vc":"TestVC"]])
         tableView = UITableView(frame: self.view.frame, style: .plain)
         self.view.addSubview(tableView)
         tableView.delegate = self
@@ -56,8 +66,8 @@ class HomeVC: BaseVC, UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: .default, reuseIdentifier: "cellId")
-        let dict:NSDictionary = self.listArray.object(at: indexPath.row) as! NSDictionary
-        cell.textLabel?.text = dict.object(forKey: "name") as? String
+        let name = listArray[indexPath.row]["name"] as? String
+        cell.textLabel?.text = name
         return cell
     }
     
@@ -71,12 +81,9 @@ class HomeVC: BaseVC, UITableViewDelegate, UITableViewDataSource {
             test.calculate()
             return
         }
-        let dict:NSDictionary = self.listArray.object(at: indexPath.row) as! NSDictionary
-        let vcName = dict.object(forKey: "vc") as! String
-        if vcName.isEmpty {
+        guard let vcClass = listArray[indexPath.row]["vc"] as? BaseVC.Type else {
             return
         }
-        let vcClass = NSClassFromString("SwiftLearning."+vcName) as! BaseVC.Type
         let vc:BaseVC = vcClass.init()
         vc.hidesBottomBarWhenPushed = true
         self.navigationController?.pushViewController(vc, animated: true)

@@ -1,102 +1,22 @@
 PODS:
   - Alamofire (5.2.2)
   - BaiduMapKit (5.4.0)
-  - BSBacktraceLogger (0.0.1)
   - Bugly (2.5.71)
-  - CocoaAsyncSocket (7.6.4)
+  - CalendarKit (1.0.11)
+  - CVCalendar (1.7.0)
+  - DifferenceKit (1.2.0):
+    - DifferenceKit/Core (= 1.2.0)
+    - DifferenceKit/UIKitExtension (= 1.2.0)
+  - DifferenceKit/Core (1.2.0)
+  - DifferenceKit/UIKitExtension (1.2.0):
+    - DifferenceKit/Core
   - Differentiator (4.0.1)
-  - EchoSDK (0.0.4):
-    - CocoaAsyncSocket
-    - EchoSDK/Plugins (= 0.0.4)
-  - EchoSDK/ClientSDK (0.0.4):
-    - CocoaAsyncSocket
-    - EchoSDK/Core
-  - EchoSDK/Core (0.0.4):
-    - CocoaAsyncSocket
-  - EchoSDK/Plugins (0.0.4):
-    - CocoaAsyncSocket
-    - EchoSDK/ClientSDK
-    - EchoSDK/Core
-    - EchoSDK/Plugins/Basic (= 0.0.4)
-    - EchoSDK/Plugins/Crash (= 0.0.4)
-    - EchoSDK/Plugins/GeneralLog (= 0.0.4)
-    - EchoSDK/Plugins/MemoryLeak (= 0.0.4)
-    - EchoSDK/Plugins/MockGPS (= 0.0.4)
-    - EchoSDK/Plugins/Network (= 0.0.4)
-    - EchoSDK/Plugins/Notification (= 0.0.4)
-    - EchoSDK/Plugins/NSLog (= 0.0.4)
-    - EchoSDK/Plugins/NSUserDefaults (= 0.0.4)
-    - EchoSDK/Plugins/UI (= 0.0.4)
-    - EchoSDK/Plugins/ViewBorder (= 0.0.4)
-    - EchoSDK/Plugins/Watchdog (= 0.0.4)
-  - EchoSDK/Plugins/Basic (0.0.4):
-    - CocoaAsyncSocket
-    - EchoSDK/ClientSDK
-    - EchoSDK/Core
-  - EchoSDK/Plugins/Crash (0.0.4):
-    - CocoaAsyncSocket
-    - EchoSDK/ClientSDK
-    - EchoSDK/Core
-  - EchoSDK/Plugins/GeneralLog (0.0.4):
-    - CocoaAsyncSocket
-    - EchoSDK/ClientSDK
-    - EchoSDK/Core
-    - fishhook
-  - EchoSDK/Plugins/MemoryLeak (0.0.4):
-    - CocoaAsyncSocket
-    - EchoSDK/ClientSDK
-    - EchoSDK/Core
-    - MLeaksFinder
-    - RSSwizzle
-  - EchoSDK/Plugins/MockGPS (0.0.4):
-    - CocoaAsyncSocket
-    - EchoSDK/ClientSDK
-    - EchoSDK/Core
-    - EchoSDK/Plugins/Basic
-    - JZLocationConverter
-  - EchoSDK/Plugins/Network (0.0.4):
-    - CocoaAsyncSocket
-    - EchoSDK/ClientSDK
-    - EchoSDK/Core
-    - EchoSDK/Plugins/Basic
-  - EchoSDK/Plugins/Notification (0.0.4):
-    - CocoaAsyncSocket
-    - EchoSDK/ClientSDK
-    - EchoSDK/Core
-    - EchoSDK/Plugins/Basic
-  - EchoSDK/Plugins/NSLog (0.0.4):
-    - CocoaAsyncSocket
-    - EchoSDK/ClientSDK
-    - EchoSDK/Core
-    - EchoSDK/Plugins/Basic
-    - fishhook
-  - EchoSDK/Plugins/NSUserDefaults (0.0.4):
-    - CocoaAsyncSocket
-    - EchoSDK/ClientSDK
-    - EchoSDK/Core
-  - EchoSDK/Plugins/UI (0.0.4):
-    - CocoaAsyncSocket
-    - EchoSDK/ClientSDK
-    - EchoSDK/Core
-  - EchoSDK/Plugins/ViewBorder (0.0.4):
-    - CocoaAsyncSocket
-    - EchoSDK/ClientSDK
-    - EchoSDK/Core
-    - EchoSDK/Plugins/Basic
-  - EchoSDK/Plugins/Watchdog (0.0.4):
-    - BSBacktraceLogger
-    - CocoaAsyncSocket
-    - EchoSDK/ClientSDK
-    - EchoSDK/Core
-  - FBRetainCycleDetector (0.1.4)
-  - fishhook (0.2)
   - HandyJSON (5.0.2)
-  - JZLocationConverter (1.0.0)
+  - HorizonCalendar (1.8.7)
+  - JTAppleCalendar (8.0.3)
   - Kingfisher (5.15.0):
     - Kingfisher/Core (= 5.15.0)
   - Kingfisher/Core (5.15.0)
-  - MLeaksFinder (1.0.0):
-    - FBRetainCycleDetector
   - Moya (14.0.0):
     - Moya/Core (= 14.0.0)
   - Moya/Core (14.0.0):
@@ -106,12 +26,11 @@ PODS:
   - R.swift (5.2.2):
     - R.swift.Library (~> 5.2.0)
   - R.swift.Library (5.2.0)
-  - Realm (5.3.6):
-    - Realm/Headers (= 5.3.6)
-  - Realm/Headers (5.3.6)
-  - RealmSwift (5.3.6):
-    - Realm (= 5.3.6)
-  - RSSwizzle (0.1.0)
+  - Realm (10.10.0):
+    - Realm/Headers (= 10.10.0)
+  - Realm/Headers (10.10.0)
+  - RealmSwift (10.10.0):
+    - Realm (= 10.10.0)
   - RxCocoa (5.1.1):
     - RxRelay (~> 5)
     - RxSwift (~> 5)
@@ -134,14 +53,18 @@ DEPENDENCIES:
   - Alamofire (~> 5.2.2)
   - BaiduMapKit (~> 5.4.0)
   - Bugly
-  - EchoSDK
+  - CalendarKit (~> 1.0.11)
+  - CVCalendar (~> 1.7.0)
+  - DifferenceKit
   - HandyJSON (~> 5.0.2)
+  - HorizonCalendar (~> 1.8.7)
+  - JTAppleCalendar (~> 8.0.3)
   - Kingfisher (~> 5.15.0)
   - Moya (~> 14.0.0)
   - ObjectMapper (~> 4.2.0)
   - PullToRefresher (~> 3.3)
   - R.swift (~> 5.2.2)
-  - RealmSwift (~> 5.3.6)
+  - RealmSwift (~> 10.10.0)
   - RxCocoa (~> 5.1.1)
   - RxDataSources (~> 4.0.1)
   - RxSwift (~> 5.1.1)
@@ -155,17 +78,15 @@ SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - Alamofire
     - BaiduMapKit
-    - BSBacktraceLogger
     - Bugly
-    - CocoaAsyncSocket
+    - CalendarKit
+    - CVCalendar
+    - DifferenceKit
     - Differentiator
-    - EchoSDK
-    - FBRetainCycleDetector
-    - fishhook
     - HandyJSON
-    - JZLocationConverter
+    - HorizonCalendar
+    - JTAppleCalendar
     - Kingfisher
-    - MLeaksFinder
     - Moya
     - ObjectMapper
     - PullToRefresher
@@ -173,7 +94,6 @@ SPEC REPOS:
     - R.swift.Library
     - Realm
     - RealmSwift
-    - RSSwizzle
     - RxCocoa
     - RxDataSources
     - RxRelay
@@ -187,25 +107,22 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
   BaiduMapKit: 40a4382633859bd569d40da9f9a2e98a277dd28b
-  BSBacktraceLogger: 06b983ee93a9f87d957960e9c73d660d5966b447
   Bugly: fd066c75c4a0eca1440f9b6a84bd37d51bfc85ac
-  CocoaAsyncSocket: 694058e7c0ed05a9e217d1b3c7ded962f4180845
+  CalendarKit: fe7803ed4f9f329f0152cb78efb0dd0cb9b54618
+  CVCalendar: 1174c1b43c1a258970e14c1e8b19ef4106c5900b
+  DifferenceKit: 5659c430bb7fe45876fa32ce5cba5d6167f0c805
   Differentiator: 886080237d9f87f322641dedbc5be257061b0602
-  EchoSDK: 6cea0f1e5e3e64c933f2148ee2b06c407b3b50cb
-  FBRetainCycleDetector: 46f8179bbb1c587deee3ea838a1a3ee02acf5015
-  fishhook: ea19933abfe8f2f52c55fd8b6e2718467d3ebc89
   HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
-  JZLocationConverter: 3d816bee6484aed9c155a6045a02ce444833e2f0
+  HorizonCalendar: 540345eff35497b46a9d6b14968955cc24677642
+  JTAppleCalendar: 932cadea40b1051beab10f67843451d48ba16c99
   Kingfisher: 1acb67597a520c2d0310677e66d6e0af455ef757
-  MLeaksFinder: 8c435bd2f6d070af18cff082b503b21adc130fc0
   Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
   ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
   PullToRefresher: 6fc2ab6494caf949bcf6f0223ffd23f9d21a06f6
   R.swift: 7c52cdc57a66840ffe6cbd8a823d732059d42a32
   R.swift.Library: 5ba4f1631300caf9a4d890186930da85d540769d
-  Realm: cd400dd7e5b5bb5c8ae9842eecd73792369e6ec0
-  RealmSwift: 99a16dbdee5d6dfb3d91d56088a9f8c15c0871d1
-  RSSwizzle: d561958f595028bfcef98c7d55c318b3878a61c6
+  Realm: f501df41a4222c67850c77cf135d472192ecf294
+  RealmSwift: c69aadfc7db0d60075178d037c2f34ada73d5201
   RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
   RxDataSources: efee07fa4de48477eca0a4611e6d11e2da9c1114
   RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
@@ -216,6 +133,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
   WebViewJavascriptBridge: 7f5bc4d3581e672e8f32bd0f812d54bc69bb8e29
 
-PODFILE CHECKSUM: 7e85e33e79f46799f2ce2087d068932ba379cad3
+PODFILE CHECKSUM: 11301642e1282aad4d7240b8f20c668dbf7b65f3
 
-COCOAPODS: 1.9.1
+COCOAPODS: 1.11.2

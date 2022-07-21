@@ -7,6 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		050EAF482888FE8A0017E3CC /* DifferenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050EAF472888FE8A0017E3CC /* DifferenceViewController.swift */; };
+		050EAF4A2888FEB90017E3CC /* DifferenceListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050EAF492888FEB90017E3CC /* DifferenceListModel.swift */; };
+		050EAF4C288900BD0017E3CC /* DifferenceListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050EAF4B288900BD0017E3CC /* DifferenceListCell.swift */; };
+		050EAF4E288900F00017E3CC /* Reusable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050EAF4D288900F00017E3CC /* Reusable+Extension.swift */; };
+		050EAF50288942990017E3CC /* DifferenceListCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050EAF4F288942990017E3CC /* DifferenceListCell2.swift */; };
+		050EAF54288942AC0017E3CC /* DifferenceListCell3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050EAF53288942AC0017E3CC /* DifferenceListCell3.swift */; };
+		050EAF5828894CC30017E3CC /* TableListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050EAF5728894CC30017E3CC /* TableListViewController.swift */; };
+		050EAF5A28894CCF0017E3CC /* CollectListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050EAF5928894CCF0017E3CC /* CollectListViewController.swift */; };
+		050EAF5C28894F830017E3CC /* CollectListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050EAF5B28894F830017E3CC /* CollectListCell.swift */; };
+		050EAF5E288950300017E3CC /* CollectListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050EAF5D288950300017E3CC /* CollectListModel.swift */; };
+		050EAF602889505B0017E3CC /* ListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050EAF5F2889505B0017E3CC /* ListModel.swift */; };
+		050EAF62288955B70017E3CC /* CollectListSectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050EAF61288955B70017E3CC /* CollectListSectionModel.swift */; };
+		050EAF642889592E0017E3CC /* CollectListCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050EAF632889592E0017E3CC /* CollectListCardCell.swift */; };
+		050EAF66288964D70017E3CC /* CollectCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050EAF65288964D70017E3CC /* CollectCardModel.swift */; };
+		059A442326A96AFD00C0112B /* CalendarListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059A442226A96AFD00C0112B /* CalendarListVC.swift */; };
+		059A442526AA601C00C0112B /* AirbnbCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059A442426AA601C00C0112B /* AirbnbCalendarView.swift */; };
+		059A442926AA605200C0112B /* CVShowCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059A442826AA605200C0112B /* CVShowCalendarView.swift */; };
+		05D68DD326A953C000988043 /* CalendarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D68DD226A953C000988043 /* CalendarVC.swift */; };
+		05D68DD526A953D800988043 /* XDCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D68DD426A953D800988043 /* XDCalendarView.swift */; };
+		05D68DD726A963BD00988043 /* DateItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D68DD626A963BD00988043 /* DateItemModel.swift */; };
+		05D68DDB26A9642B00988043 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D68DDA26A9642B00988043 /* Date+Extension.swift */; };
 		5C00C6D8DA6E9D45E2DD7CA1 /* Pods_Mermaid.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E10A65427842C4B0D4BDBE0 /* Pods_Mermaid.framework */; };
 		E67B1DFF250E883700D9E101 /* confuse.sh in Resources */ = {isa = PBXBuildFile; fileRef = E67B1DFC250E883700D9E101 /* confuse.sh */; };
 		E67B1E00250E883700D9E101 /* ConfuseIntroduction.md in Resources */ = {isa = PBXBuildFile; fileRef = E67B1DFD250E883700D9E101 /* ConfuseIntroduction.md */; };
@@ -76,6 +97,27 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		050EAF472888FE8A0017E3CC /* DifferenceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifferenceViewController.swift; sourceTree = "<group>"; };
+		050EAF492888FEB90017E3CC /* DifferenceListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifferenceListModel.swift; sourceTree = "<group>"; };
+		050EAF4B288900BD0017E3CC /* DifferenceListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifferenceListCell.swift; sourceTree = "<group>"; };
+		050EAF4D288900F00017E3CC /* Reusable+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reusable+Extension.swift"; sourceTree = "<group>"; };
+		050EAF4F288942990017E3CC /* DifferenceListCell2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifferenceListCell2.swift; sourceTree = "<group>"; };
+		050EAF53288942AC0017E3CC /* DifferenceListCell3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifferenceListCell3.swift; sourceTree = "<group>"; };
+		050EAF5728894CC30017E3CC /* TableListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableListViewController.swift; sourceTree = "<group>"; };
+		050EAF5928894CCF0017E3CC /* CollectListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectListViewController.swift; sourceTree = "<group>"; };
+		050EAF5B28894F830017E3CC /* CollectListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectListCell.swift; sourceTree = "<group>"; };
+		050EAF5D288950300017E3CC /* CollectListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectListModel.swift; sourceTree = "<group>"; };
+		050EAF5F2889505B0017E3CC /* ListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListModel.swift; sourceTree = "<group>"; };
+		050EAF61288955B70017E3CC /* CollectListSectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectListSectionModel.swift; sourceTree = "<group>"; };
+		050EAF632889592E0017E3CC /* CollectListCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectListCardCell.swift; sourceTree = "<group>"; };
+		050EAF65288964D70017E3CC /* CollectCardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectCardModel.swift; sourceTree = "<group>"; };
+		059A442226A96AFD00C0112B /* CalendarListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarListVC.swift; sourceTree = "<group>"; };
+		059A442426AA601C00C0112B /* AirbnbCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirbnbCalendarView.swift; sourceTree = "<group>"; };
+		059A442826AA605200C0112B /* CVShowCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVShowCalendarView.swift; sourceTree = "<group>"; };
+		05D68DD226A953C000988043 /* CalendarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarVC.swift; sourceTree = "<group>"; };
+		05D68DD426A953D800988043 /* XDCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDCalendarView.swift; sourceTree = "<group>"; };
+		05D68DD626A963BD00988043 /* DateItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateItemModel.swift; sourceTree = "<group>"; };
+		05D68DDA26A9642B00988043 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		3E48224AD16B4741C86056CF /* Pods-Mermaid.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mermaid.debug.xcconfig"; path = "Target Support Files/Pods-Mermaid/Pods-Mermaid.debug.xcconfig"; sourceTree = "<group>"; };
 		48A4AD3E248C978473B2BB0A /* Pods-Mermaid.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mermaid.release.xcconfig"; path = "Target Support Files/Pods-Mermaid/Pods-Mermaid.release.xcconfig"; sourceTree = "<group>"; };
 		4E10A65427842C4B0D4BDBE0 /* Pods_Mermaid.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mermaid.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -166,6 +208,102 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		050EAF462888FE450017E3CC /* DifferenceExample */ = {
+			isa = PBXGroup;
+			children = (
+				050EAF472888FE8A0017E3CC /* DifferenceViewController.swift */,
+				050EAF492888FEB90017E3CC /* DifferenceListModel.swift */,
+				050EAF4B288900BD0017E3CC /* DifferenceListCell.swift */,
+				050EAF4F288942990017E3CC /* DifferenceListCell2.swift */,
+				050EAF53288942AC0017E3CC /* DifferenceListCell3.swift */,
+			);
+			path = DifferenceExample;
+			sourceTree = "<group>";
+		};
+		050EAF5528894C8F0017E3CC /* TableExample */ = {
+			isa = PBXGroup;
+			children = (
+				050EAF5728894CC30017E3CC /* TableListViewController.swift */,
+			);
+			path = TableExample;
+			sourceTree = "<group>";
+		};
+		050EAF5628894CAB0017E3CC /* CollectExample */ = {
+			isa = PBXGroup;
+			children = (
+				050EAF5928894CCF0017E3CC /* CollectListViewController.swift */,
+				050EAF632889592E0017E3CC /* CollectListCardCell.swift */,
+				050EAF5B28894F830017E3CC /* CollectListCell.swift */,
+				050EAF65288964D70017E3CC /* CollectCardModel.swift */,
+				050EAF5D288950300017E3CC /* CollectListModel.swift */,
+				050EAF61288955B70017E3CC /* CollectListSectionModel.swift */,
+				050EAF5F2889505B0017E3CC /* ListModel.swift */,
+			);
+			path = CollectExample;
+			sourceTree = "<group>";
+		};
+		05D68DCD26A9538200988043 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				05D68DD126A953A400988043 /* ViewModel */,
+				05D68DD026A953A000988043 /* Controller */,
+				05D68DCF26A9539D00988043 /* Model */,
+				05D68DCE26A9539900988043 /* View */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		05D68DCE26A9539900988043 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				05D68DD426A953D800988043 /* XDCalendarView.swift */,
+				059A442426AA601C00C0112B /* AirbnbCalendarView.swift */,
+				059A442826AA605200C0112B /* CVShowCalendarView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		05D68DCF26A9539D00988043 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				05D68DD626A963BD00988043 /* DateItemModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		05D68DD026A953A000988043 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				059A442226A96AFD00C0112B /* CalendarListVC.swift */,
+				05D68DD226A953C000988043 /* CalendarVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		05D68DD126A953A400988043 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		05D68DD826A9640100988043 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				05D68DD926A9641000988043 /* Date */,
+				050EAF4D288900F00017E3CC /* Reusable+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		05D68DD926A9641000988043 /* Date */ = {
+			isa = PBXGroup;
+			children = (
+				05D68DDA26A9642B00988043 /* Date+Extension.swift */,
+			);
+			path = Date;
+			sourceTree = "<group>";
+		};
 		11C1A3C7EAEEF6EA993B4EEA /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -219,6 +357,7 @@
 				E6BC31F12504C86A00CCE02E /* Expand */,
 				E6BC322D2504C86A00CCE02E /* Resource */,
 				E6BC31ED2504C85C00CCE02E /* Study */,
+				05D68DD826A9640100988043 /* Extension */,
 			);
 			path = Mermaid;
 			sourceTree = "<group>";
@@ -304,6 +443,10 @@
 		E6BC32022504C86A00CCE02E /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				050EAF5628894CAB0017E3CC /* CollectExample */,
+				050EAF5528894C8F0017E3CC /* TableExample */,
+				050EAF462888FE450017E3CC /* DifferenceExample */,
+				05D68DCD26A9538200988043 /* Calendar */,
 				E6BC32032504C86A00CCE02E /* Home */,
 				E6BC320D2504C86A00CCE02E /* Test */,
 				E6BC32172504C86A00CCE02E /* Launch */,
@@ -716,16 +859,27 @@
 				E6BC32442504C86A00CCE02E /* SegmentVC.swift in Sources */,
 				E6BC32582504C86A00CCE02E /* BaseTabbarVC.swift in Sources */,
 				E6BC32562504C86A00CCE02E /* BaseVC.swift in Sources */,
+				050EAF642889592E0017E3CC /* CollectListCardCell.swift in Sources */,
 				E6BC31F02504C85C00CCE02E /* SLinkListTool.swift in Sources */,
 				E6BC32472504C86A00CCE02E /* BannerFocusCell.swift in Sources */,
 				E6BC324B2504C86A00CCE02E /* TestJsonModelTool.swift in Sources */,
+				050EAF4C288900BD0017E3CC /* DifferenceListCell.swift in Sources */,
+				050EAF482888FE8A0017E3CC /* DifferenceViewController.swift in Sources */,
 				E6C8FEFD25112F3A00C4B46E /* XDBlackboard.swift in Sources */,
+				050EAF5828894CC30017E3CC /* TableListViewController.swift in Sources */,
 				E6BC32482504C86A00CCE02E /* BannerFocusView.swift in Sources */,
 				E6BC323D2504C86A00CCE02E /* XDInterface.swift in Sources */,
+				050EAF5C28894F830017E3CC /* CollectListCell.swift in Sources */,
 				E6BC32392504C86A00CCE02E /* NSObjectExtension.swift in Sources */,
 				E6BC32572504C86A00CCE02E /* BaseNavVC.swift in Sources */,
+				050EAF4A2888FEB90017E3CC /* DifferenceListModel.swift in Sources */,
+				05D68DD526A953D800988043 /* XDCalendarView.swift in Sources */,
 				E6BC323B2504C86A00CCE02E /* UIFontExtension.swift in Sources */,
+				050EAF4E288900F00017E3CC /* Reusable+Extension.swift in Sources */,
 				E6BC325C2504C86A00CCE02E /* Const.swift in Sources */,
+				050EAF62288955B70017E3CC /* CollectListSectionModel.swift in Sources */,
+				050EAF54288942AC0017E3CC /* DifferenceListCell3.swift in Sources */,
+				059A442926AA605200C0112B /* CVShowCalendarView.swift in Sources */,
 				E6BC32542504C86A00CCE02E /* AppDelegate.swift in Sources */,
 				E6BC323A2504C86A00CCE02E /* UITextFieldExtension.swift in Sources */,
 				E6BC32412504C86A00CCE02E /* LoadingView.swift in Sources */,
@@ -734,22 +888,32 @@
 				E6BC324C2504C86A00CCE02E /* TestOCTool.m in Sources */,
 				E6BC32512504C86A00CCE02E /* MeViewModel.swift in Sources */,
 				E6BC32352504C86A00CCE02E /* UIButtonExtension.swift in Sources */,
+				050EAF50288942990017E3CC /* DifferenceListCell2.swift in Sources */,
 				E6BC32462504C86A00CCE02E /* BannerNormalCell.swift in Sources */,
 				E6A72017250B5CC300EB1EB2 /* NFCTool.swift in Sources */,
 				E6BC323C2504C86A00CCE02E /* StringExtension.swift in Sources */,
 				E6BC32372504C86A00CCE02E /* UIViewOrdinate.swift in Sources */,
 				E6BC32432504C86A00CCE02E /* HomeVC.swift in Sources */,
+				050EAF66288964D70017E3CC /* CollectCardModel.swift in Sources */,
+				05D68DDB26A9642B00988043 /* Date+Extension.swift in Sources */,
 				E6BC32362504C86A00CCE02E /* UIImageViewExtension.swift in Sources */,
 				E6BC32502504C86A00CCE02E /* XDDownloadImageManager.swift in Sources */,
+				050EAF602889505B0017E3CC /* ListModel.swift in Sources */,
+				05D68DD726A963BD00988043 /* DateItemModel.swift in Sources */,
 				E6BC324F2504C86A00CCE02E /* XDArrayTool.m in Sources */,
 				E6BC32422504C86A00CCE02E /* BannerVC.swift in Sources */,
+				05D68DD326A953C000988043 /* CalendarVC.swift in Sources */,
+				059A442326A96AFD00C0112B /* CalendarListVC.swift in Sources */,
 				E6BC324D2504C86A00CCE02E /* TestNetWorkTool.swift in Sources */,
 				E6BC32402504C86A00CCE02E /* Interface.swift in Sources */,
 				E6BC323E2504C86A00CCE02E /* XDNetwork.swift in Sources */,
 				E6BC32382504C86A00CCE02E /* UITextViewExtension.swift in Sources */,
 				E6BC324A2504C86A00CCE02E /* TestView.swift in Sources */,
 				E6BC32532504C86A00CCE02E /* MeHeaderView.swift in Sources */,
+				050EAF5A28894CCF0017E3CC /* CollectListViewController.swift in Sources */,
 				E6BC323F2504C86A00CCE02E /* MyTool.swift in Sources */,
+				050EAF5E288950300017E3CC /* CollectListModel.swift in Sources */,
+				059A442526AA601C00C0112B /* AirbnbCalendarView.swift in Sources */,
 				E6BC32492504C86A00CCE02E /* TestVC.swift in Sources */,
 				E6BC32452504C86A00CCE02E /* BannerNormalView.swift in Sources */,
 			);
@@ -837,7 +1001,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -891,7 +1055,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -910,6 +1074,7 @@
 				DEVELOPMENT_TEAM = KR5AULFCNL;
 				GCC_PREFIX_HEADER = $PROJECT_DIR/Confuse/ConfuseHeader.pch;
 				INFOPLIST_FILE = "$(SRCROOT)/Mermaid/Config/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -931,6 +1096,7 @@
 				DEVELOPMENT_TEAM = KR5AULFCNL;
 				GCC_PREFIX_HEADER = $PROJECT_DIR/Confuse/ConfuseHeader.pch;
 				INFOPLIST_FILE = "$(SRCROOT)/Mermaid/Config/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
