@@ -33,19 +33,25 @@ class CollectListCell: UICollectionViewCell {
         initUI()
     }
     
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        XDLog.log()
+    }
+    
     private func initUI() {
         contentView.layer.borderWidth = 1
         contentView.layer.borderColor = UIColor.green.cgColor
         [titleLabel, contentLabel].forEach({ contentView.addSubview($0) })
         titleLabel.snp.makeConstraints { make in
-            make.top.left.equalTo(16)
-            make.right.lessThanOrEqualTo(-16)
+            make.top.equalTo(16)
+            make.left.equalTo(16).priority(.high)
+            make.right.lessThanOrEqualTo(-16).priority(.high)
         }
         contentLabel.snp.makeConstraints { make in
             make.top.equalTo(titleLabel.snp.bottom).offset(6)
             make.left.equalTo(titleLabel)
-            make.right.lessThanOrEqualTo(-16)
-            make.bottom.equalTo(-16)
+            make.right.bottom.lessThanOrEqualTo(-16).priority(.high)
+//            make.bottom.equalTo(-16)
         }
     }
     

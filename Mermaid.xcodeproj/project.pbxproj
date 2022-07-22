@@ -21,6 +21,13 @@
 		050EAF62288955B70017E3CC /* CollectListSectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050EAF61288955B70017E3CC /* CollectListSectionModel.swift */; };
 		050EAF642889592E0017E3CC /* CollectListCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050EAF632889592E0017E3CC /* CollectListCardCell.swift */; };
 		050EAF66288964D70017E3CC /* CollectCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050EAF65288964D70017E3CC /* CollectCardModel.swift */; };
+		050EAF68288A86350017E3CC /* CollectListFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050EAF67288A86350017E3CC /* CollectListFlowLayout.swift */; };
+		050EAF6B288A869A0017E3CC /* XDLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050EAF6A288A869A0017E3CC /* XDLabel.swift */; };
+		050EAF6D288A8AF10017E3CC /* CollectListReduceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050EAF6C288A8AF10017E3CC /* CollectListReduceCell.swift */; };
+		050EAF72288A8B540017E3CC /* CollectReduceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050EAF71288A8B540017E3CC /* CollectReduceModel.swift */; };
+		050EAF74288A90620017E3CC /* XDCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050EAF73288A90620017E3CC /* XDCollectionView.swift */; };
+		050EAF77288A9AD40017E3CC /* XDLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050EAF76288A9AD40017E3CC /* XDLog.swift */; };
+		050EAF7A288AAC8A0017E3CC /* CollectListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050EAF79288AAC8A0017E3CC /* CollectListViewModel.swift */; };
 		059A442326A96AFD00C0112B /* CalendarListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059A442226A96AFD00C0112B /* CalendarListVC.swift */; };
 		059A442526AA601C00C0112B /* AirbnbCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059A442426AA601C00C0112B /* AirbnbCalendarView.swift */; };
 		059A442926AA605200C0112B /* CVShowCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059A442826AA605200C0112B /* CVShowCalendarView.swift */; };
@@ -111,6 +118,13 @@
 		050EAF61288955B70017E3CC /* CollectListSectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectListSectionModel.swift; sourceTree = "<group>"; };
 		050EAF632889592E0017E3CC /* CollectListCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectListCardCell.swift; sourceTree = "<group>"; };
 		050EAF65288964D70017E3CC /* CollectCardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectCardModel.swift; sourceTree = "<group>"; };
+		050EAF67288A86350017E3CC /* CollectListFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectListFlowLayout.swift; sourceTree = "<group>"; };
+		050EAF6A288A869A0017E3CC /* XDLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDLabel.swift; sourceTree = "<group>"; };
+		050EAF6C288A8AF10017E3CC /* CollectListReduceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectListReduceCell.swift; sourceTree = "<group>"; };
+		050EAF71288A8B540017E3CC /* CollectReduceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectReduceModel.swift; sourceTree = "<group>"; };
+		050EAF73288A90620017E3CC /* XDCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDCollectionView.swift; sourceTree = "<group>"; };
+		050EAF76288A9AD40017E3CC /* XDLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDLog.swift; sourceTree = "<group>"; };
+		050EAF79288AAC8A0017E3CC /* CollectListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectListViewModel.swift; sourceTree = "<group>"; };
 		059A442226A96AFD00C0112B /* CalendarListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarListVC.swift; sourceTree = "<group>"; };
 		059A442426AA601C00C0112B /* AirbnbCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirbnbCalendarView.swift; sourceTree = "<group>"; };
 		059A442826AA605200C0112B /* CVShowCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVShowCalendarView.swift; sourceTree = "<group>"; };
@@ -231,15 +245,68 @@
 		050EAF5628894CAB0017E3CC /* CollectExample */ = {
 			isa = PBXGroup;
 			children = (
-				050EAF5928894CCF0017E3CC /* CollectListViewController.swift */,
-				050EAF632889592E0017E3CC /* CollectListCardCell.swift */,
-				050EAF5B28894F830017E3CC /* CollectListCell.swift */,
-				050EAF65288964D70017E3CC /* CollectCardModel.swift */,
-				050EAF5D288950300017E3CC /* CollectListModel.swift */,
-				050EAF61288955B70017E3CC /* CollectListSectionModel.swift */,
-				050EAF5F2889505B0017E3CC /* ListModel.swift */,
+				050EAF78288AAC7A0017E3CC /* ViewModel */,
+				050EAF70288A8B1D0017E3CC /* Controller */,
+				050EAF6F288A8B1A0017E3CC /* View */,
+				050EAF6E288A8B000017E3CC /* Model */,
 			);
 			path = CollectExample;
+			sourceTree = "<group>";
+		};
+		050EAF69288A86680017E3CC /* ViewComponents */ = {
+			isa = PBXGroup;
+			children = (
+				050EAF6A288A869A0017E3CC /* XDLabel.swift */,
+			);
+			path = ViewComponents;
+			sourceTree = "<group>";
+		};
+		050EAF6E288A8B000017E3CC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				050EAF67288A86350017E3CC /* CollectListFlowLayout.swift */,
+				050EAF5F2889505B0017E3CC /* ListModel.swift */,
+				050EAF61288955B70017E3CC /* CollectListSectionModel.swift */,
+				050EAF5D288950300017E3CC /* CollectListModel.swift */,
+				050EAF65288964D70017E3CC /* CollectCardModel.swift */,
+				050EAF71288A8B540017E3CC /* CollectReduceModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		050EAF6F288A8B1A0017E3CC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				050EAF632889592E0017E3CC /* CollectListCardCell.swift */,
+				050EAF6C288A8AF10017E3CC /* CollectListReduceCell.swift */,
+				050EAF5B28894F830017E3CC /* CollectListCell.swift */,
+				050EAF73288A90620017E3CC /* XDCollectionView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		050EAF70288A8B1D0017E3CC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				050EAF5928894CCF0017E3CC /* CollectListViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		050EAF75288A9AC30017E3CC /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				050EAF76288A9AD40017E3CC /* XDLog.swift */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		050EAF78288AAC7A0017E3CC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				050EAF79288AAC8A0017E3CC /* CollectListViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		05D68DCD26A9538200988043 /* Calendar */ = {
@@ -351,12 +418,14 @@
 		E6BC31BC2504C43400CCE02E /* Mermaid */ = {
 			isa = PBXGroup;
 			children = (
+				050EAF69288A86680017E3CC /* ViewComponents */,
 				E6BC32242504C86A00CCE02E /* Startup */,
 				E6BC32022504C86A00CCE02E /* Class */,
 				E6BC32302504C86A00CCE02E /* Config */,
 				E6BC31F12504C86A00CCE02E /* Expand */,
 				E6BC322D2504C86A00CCE02E /* Resource */,
 				E6BC31ED2504C85C00CCE02E /* Study */,
+				050EAF75288A9AC30017E3CC /* Tool */,
 				05D68DD826A9640100988043 /* Extension */,
 			);
 			path = Mermaid;
@@ -858,8 +927,11 @@
 			files = (
 				E6BC32442504C86A00CCE02E /* SegmentVC.swift in Sources */,
 				E6BC32582504C86A00CCE02E /* BaseTabbarVC.swift in Sources */,
+				050EAF72288A8B540017E3CC /* CollectReduceModel.swift in Sources */,
 				E6BC32562504C86A00CCE02E /* BaseVC.swift in Sources */,
+				050EAF7A288AAC8A0017E3CC /* CollectListViewModel.swift in Sources */,
 				050EAF642889592E0017E3CC /* CollectListCardCell.swift in Sources */,
+				050EAF6B288A869A0017E3CC /* XDLabel.swift in Sources */,
 				E6BC31F02504C85C00CCE02E /* SLinkListTool.swift in Sources */,
 				E6BC32472504C86A00CCE02E /* BannerFocusCell.swift in Sources */,
 				E6BC324B2504C86A00CCE02E /* TestJsonModelTool.swift in Sources */,
@@ -870,11 +942,13 @@
 				E6BC32482504C86A00CCE02E /* BannerFocusView.swift in Sources */,
 				E6BC323D2504C86A00CCE02E /* XDInterface.swift in Sources */,
 				050EAF5C28894F830017E3CC /* CollectListCell.swift in Sources */,
+				050EAF77288A9AD40017E3CC /* XDLog.swift in Sources */,
 				E6BC32392504C86A00CCE02E /* NSObjectExtension.swift in Sources */,
 				E6BC32572504C86A00CCE02E /* BaseNavVC.swift in Sources */,
 				050EAF4A2888FEB90017E3CC /* DifferenceListModel.swift in Sources */,
 				05D68DD526A953D800988043 /* XDCalendarView.swift in Sources */,
 				E6BC323B2504C86A00CCE02E /* UIFontExtension.swift in Sources */,
+				050EAF68288A86350017E3CC /* CollectListFlowLayout.swift in Sources */,
 				050EAF4E288900F00017E3CC /* Reusable+Extension.swift in Sources */,
 				E6BC325C2504C86A00CCE02E /* Const.swift in Sources */,
 				050EAF62288955B70017E3CC /* CollectListSectionModel.swift in Sources */,
@@ -889,6 +963,7 @@
 				E6BC32512504C86A00CCE02E /* MeViewModel.swift in Sources */,
 				E6BC32352504C86A00CCE02E /* UIButtonExtension.swift in Sources */,
 				050EAF50288942990017E3CC /* DifferenceListCell2.swift in Sources */,
+				050EAF74288A90620017E3CC /* XDCollectionView.swift in Sources */,
 				E6BC32462504C86A00CCE02E /* BannerNormalCell.swift in Sources */,
 				E6A72017250B5CC300EB1EB2 /* NFCTool.swift in Sources */,
 				E6BC323C2504C86A00CCE02E /* StringExtension.swift in Sources */,
@@ -915,6 +990,7 @@
 				050EAF5E288950300017E3CC /* CollectListModel.swift in Sources */,
 				059A442526AA601C00C0112B /* AirbnbCalendarView.swift in Sources */,
 				E6BC32492504C86A00CCE02E /* TestVC.swift in Sources */,
+				050EAF6D288A8AF10017E3CC /* CollectListReduceCell.swift in Sources */,
 				E6BC32452504C86A00CCE02E /* BannerNormalView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

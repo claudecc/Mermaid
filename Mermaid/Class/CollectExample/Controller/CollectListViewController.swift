@@ -8,27 +8,21 @@
 
 import UIKit
 
-extension CollectListViewController {
-    enum SectionType: Equatable {
-        case userCard
-        case reduce
-        case list
-    }
-}
-
 class CollectListViewController: BaseVC {
+    private lazy var viewMoel = CollectListViewModel()
+    
     private lazy var collectionView: UICollectionView = {
         let flow = UICollectionViewFlowLayout()
+        flow.minimumLineSpacing = 0
+        flow.minimumInteritemSpacing = 0
         let view = UICollectionView(frame: .zero, collectionViewLayout: flow)
         view.delegate = self
         view.dataSource = self
         view.register(cellType: CollectListCell.self)
         view.register(cellType: CollectListCardCell.self)
+        view.register(cellType: CollectListReduceCell.self)
         return view
     }()
-    
-    typealias Section = CollectListSectionModel<SectionType, Any>
-    private var data: [Section] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,34 +34,32 @@ class CollectListViewController: BaseVC {
     }
     
     private func loadData() {
-        let list: [Any] = [
-            CollectListModel(title: "item 1", des: "content"),
-            CollectListModel(title: "item 2", des: "content"),
-            CollectListModel(title: "item 3", des: "content"),
-            CollectListModel(title: "item 4", des: "content"),
-            CollectListModel(title: "item 5", des: "content"),
-            CollectListModel(title: "item 6", des: "content"),
-        ]
-        data = [
-            CollectListSectionModel(identifier: SectionType.userCard, items: [CollectCardModel(title: "UserName")]),
-            CollectListSectionModel(identifier: SectionType.list, items: list)
-        ]
+        viewMoel.loadData()
     }
     
-//    private func calculateCellSize() {
-//
-//    }
+    /// 需要先在cellForItemAt中赋值数据
+    private func calculateCellSize(collectionView: UICollectionView, indexPath: IndexPath) -> CGSize {
+        var width: CGFloat = collectionView.frame.width
+        let calculateCell = self.collectionView(collectionView, cellForItemAt: indexPath)
+        if calculateCell is CollectListCell {
+            width = floor(collectionView.frame.width / 3)
+            return CGSize(width: width, height: 80)
+        }
+        let maxSize = CGSize(width: width, height: collectionView.frame.height)
+        let size = calculateCell.contentView.systemLayoutSizeFitting(maxSize, withHorizontalFittingPriority: .required, verticalFittingPriority: .fittingSizeLevel)
+        return size
+    }
 }
 
 extension CollectListViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        data.count
+        viewMoel.data.count
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        data[section].items.count
+        viewMoel.data[section].items.count
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let sectionModel = data[indexPath.section]
+        let sectionModel = viewMoel.data[indexPath.section]
         switch sectionModel.identifier {
         case .userCard:
             let cell = collectionView.dequeueReusableCell(for: indexPath, cellType: CollectListCardCell.self)
@@ -81,14 +73,19 @@ extension CollectListViewController: UICollectionViewDelegate, UICollectionViewD
             cell.update(model: model)
             return cell
             
-        default:
-            return UICollectionViewCell()
+        case .reduce:
+            let cell = collectionView.dequeueReusableCell(for: indexPath, cellType: CollectListReduceCell.self)
+            let model = sectionModel.items[indexPath.item] as! CollectReduceModel
+            cell.update(model: model)
+            return cell
         }
     }
 }
 
-//extension CollectListViewController: UICollectionViewDelegateFlowLayout {
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-//        .zero
-//    }
-//}
+extension CollectListViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let size = calculateCellSize(collectionView: collectionView, indexPath: indexPath)
+        XDLog.log("indexPath: \(indexPath.section):\(indexPath.row)")
+        return size
+    }
+}
