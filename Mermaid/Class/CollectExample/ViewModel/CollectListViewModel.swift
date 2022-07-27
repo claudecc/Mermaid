@@ -14,7 +14,7 @@ extension CollectListViewModel {
         case reduce
         case list
     }
-    typealias Section = CollectListSectionModel<SectionType, Any>
+    typealias Section = SectionsModel<SectionType, Any>
 }
 
 
@@ -67,9 +67,9 @@ class CollectListViewModel {
             CollectReduceModel(title: "content"),
         ]
         data = [
-            CollectListSectionModel(identifier: SectionType.userCard, items: cardList),
-            CollectListSectionModel(identifier: SectionType.list, items: list),
-            CollectListSectionModel(identifier: SectionType.reduce, items: reduceList)
+            SectionsModel(identifier: SectionType.userCard, items: cardList),
+            SectionsModel(identifier: SectionType.list, items: list),
+            SectionsModel(identifier: SectionType.reduce, items: reduceList)
         ]
     }
     

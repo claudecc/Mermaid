@@ -1,5 +1,5 @@
 //
-//  CollectListSectionModel.swift
+//  SectionsModel.swift
 //  Mermaid
 //
 //  Created by caixiaodong on 2022/7/21.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct CollectListSectionModel<ID: Equatable, ITEM: Any> {
+struct SectionsModel<ID: Equatable, ITEM: Any> {
     var identifier: ID
     var items: [ITEM] = []
 }
