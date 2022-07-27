@@ -18,7 +18,9 @@ extension TableListViewModel {
 }
 
 class TableListViewModel {
-    private(set) var data: [Section] = []
+    var data: [Section] = []
+    
+    var listModel = ListModel<TableListModel>()
     
     func loadData() {
         let userList: [Any] = (1...10).map({ TableListUserModel(title: "\($0) UserContentUserContentUserContentUserContentUserContentUserContentUserContentUserContentUserContentUserContentUserContentUserContentUserContentUserContent") })
@@ -31,4 +33,7 @@ class TableListViewModel {
         ]
     }
     
+    func loadSingleSectionList() {
+        listModel.list = (1...20).map({ TableListModel(title: "item \($0)", des: "contentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontent") })
+    }
 }

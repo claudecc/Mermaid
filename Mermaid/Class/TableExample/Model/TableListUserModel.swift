@@ -11,4 +11,5 @@ import Foundation
 struct TableListUserModel: Codable {
     var title: String?
     var des: String?
+    var isFold = false
 }

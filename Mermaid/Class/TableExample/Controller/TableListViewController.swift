@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TableListViewController: BaseVC, TableCacheHeight {
+class TableListViewController: BaseVC {
     private lazy var viewModel = TableListViewModel()
     
     private lazy var tableView: UITableView = {
@@ -21,8 +21,6 @@ class TableListViewController: BaseVC, TableCacheHeight {
         return view
     }()
     
-    private var data: [AnyObject] = []
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -32,40 +30,64 @@ class TableListViewController: BaseVC, TableCacheHeight {
         tableView.snp.makeConstraints { make in
             make.edges.equalToSuperview()
         }
-        viewModel.loadData()
+//        viewModel.loadData()
+        viewModel.loadSingleSectionList()
     }
 }
 
-extension TableListViewController: UITableViewDelegate, UITableViewDataSource {
-    func numberOfSections(in tableView: UITableView) -> Int {
-        viewModel.data.count
-    }
+//extension TableListViewController: UITableViewDelegate, UITableViewDataSource, TableSectionCacheHeight {
+//    func numberOfSections(in tableView: UITableView) -> Int {
+//        viewModel.data.count
+//    }
+//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        viewModel.data[section].items.count
+//    }
+//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+//        return getSectionCellHeight(tableView: tableView, indexPath: indexPath)
+//    }
+//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        var sectionModel = viewModel.data[indexPath.section]
+//        switch sectionModel.identifier {
+//        case .user:
+//            let cell = tableView.dequeueReusableCell(for: indexPath, cellType: TableListUserCell.self)
+//            var model = sectionModel.items[indexPath.row] as! TableListUserModel
+//            cell.update(model: model)
+//            cell.clickBlock = { [weak self] in
+//                guard let self = self else { return }
+//                model.isFold.toggle()
+//                sectionModel.items[indexPath.row] = model
+//                self.viewModel.data[indexPath.section] = sectionModel
+//                self.clearTableCacheHeight(indexPath: indexPath)
+//                self.tableView.reloadRows(at: [indexPath], with: .fade)
+//            }
+//            return cell
+//
+//        case .list:
+//            let cell = tableView.dequeueReusableCell(for: indexPath, cellType: TableListCell.self)
+//            let model = sectionModel.items[indexPath.row] as! TableListModel
+//            cell.update(model: model)
+//            return cell
+//
+//        case .card:
+//            let cell = tableView.dequeueReusableCell(for: indexPath, cellType: TableListCardCell.self)
+//            let model = sectionModel.items[indexPath.row] as! TableListCardModel
+//            cell.update(model: model)
+//            return cell
+//        }
+//    }
+//}
+
+extension TableListViewController: UITableViewDelegate, UITableViewDataSource, TableCacheHeight {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        viewModel.data[section].items.count
+        viewModel.listModel.list.count
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return getCellHeight(tableView: tableView, indexPath: indexPath)
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let sectionModel = viewModel.data[indexPath.section]
-        switch sectionModel.identifier {
-        case .user:
-            let cell = tableView.dequeueReusableCell(for: indexPath, cellType: TableListUserCell.self)
-            let model = sectionModel.items[indexPath.row] as! TableListUserModel
-            cell.update(model: model)
-            return cell
-            
-        case .list:
-            let cell = tableView.dequeueReusableCell(for: indexPath, cellType: TableListCell.self)
-            let model = sectionModel.items[indexPath.row] as! TableListModel
-            cell.update(model: model)
-            return cell
-            
-        case .card:
-            let cell = tableView.dequeueReusableCell(for: indexPath, cellType: TableListCardCell.self)
-            let model = sectionModel.items[indexPath.row] as! TableListCardModel
-            cell.update(model: model)
-            return cell
-        }
+        let cell = tableView.dequeueReusableCell(for: indexPath, cellType: TableListCell.self)
+        let model = viewModel.listModel.list[indexPath.row]
+        cell.update(model: model)
+        return cell
     }
 }

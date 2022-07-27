@@ -11,4 +11,6 @@ import Foundation
 struct ListModel<T: Codable> {
     var list: [T] = []
     var total: Int = 0
+    var count: Int { list.count }
+    var isEnd: Bool { count >= total }
 }

@@ -35,7 +35,7 @@
 		050EAF882890E6FC0017E3CC /* TableListCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050EAF872890E6FC0017E3CC /* TableListCardModel.swift */; };
 		050EAF8B2890E70E0017E3CC /* TableListUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050EAF8A2890E70E0017E3CC /* TableListUserModel.swift */; };
 		050EAF8D2890E8DB0017E3CC /* TableListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050EAF8C2890E8DB0017E3CC /* TableListViewModel.swift */; };
-		050EAF8F28911D580017E3CC /* TableCacheHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050EAF8E28911D580017E3CC /* TableCacheHeight.swift */; };
+		050EAF8F28911D580017E3CC /* TableSectionCacheHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050EAF8E28911D580017E3CC /* TableSectionCacheHeight.swift */; };
 		059A442326A96AFD00C0112B /* CalendarListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059A442226A96AFD00C0112B /* CalendarListVC.swift */; };
 		059A442526AA601C00C0112B /* AirbnbCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059A442426AA601C00C0112B /* AirbnbCalendarView.swift */; };
 		059A442926AA605200C0112B /* CVShowCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059A442826AA605200C0112B /* CVShowCalendarView.swift */; };
@@ -140,7 +140,7 @@
 		050EAF872890E6FC0017E3CC /* TableListCardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableListCardModel.swift; sourceTree = "<group>"; };
 		050EAF8A2890E70E0017E3CC /* TableListUserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableListUserModel.swift; sourceTree = "<group>"; };
 		050EAF8C2890E8DB0017E3CC /* TableListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableListViewModel.swift; sourceTree = "<group>"; };
-		050EAF8E28911D580017E3CC /* TableCacheHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCacheHeight.swift; sourceTree = "<group>"; };
+		050EAF8E28911D580017E3CC /* TableSectionCacheHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableSectionCacheHeight.swift; sourceTree = "<group>"; };
 		059A442226A96AFD00C0112B /* CalendarListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarListVC.swift; sourceTree = "<group>"; };
 		059A442426AA601C00C0112B /* AirbnbCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirbnbCalendarView.swift; sourceTree = "<group>"; };
 		059A442826AA605200C0112B /* CVShowCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVShowCalendarView.swift; sourceTree = "<group>"; };
@@ -334,7 +334,7 @@
 				050EAF7F2890E6B90017E3CC /* TableListUserCell.swift */,
 				050EAF7D2890E6AE0017E3CC /* TableListCardCell.swift */,
 				050EAF7B2890E6A00017E3CC /* TableListCell.swift */,
-				050EAF8E28911D580017E3CC /* TableCacheHeight.swift */,
+				050EAF8E28911D580017E3CC /* TableSectionCacheHeight.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1052,7 +1052,7 @@
 				050EAF5E288950300017E3CC /* CollectListModel.swift in Sources */,
 				059A442526AA601C00C0112B /* AirbnbCalendarView.swift in Sources */,
 				E6BC32492504C86A00CCE02E /* TestVC.swift in Sources */,
-				050EAF8F28911D580017E3CC /* TableCacheHeight.swift in Sources */,
+				050EAF8F28911D580017E3CC /* TableSectionCacheHeight.swift in Sources */,
 				050EAF6D288A8AF10017E3CC /* CollectListReduceCell.swift in Sources */,
 				050EAF7C2890E6A00017E3CC /* TableListCell.swift in Sources */,
 				E6BC32452504C86A00CCE02E /* BannerNormalView.swift in Sources */,
