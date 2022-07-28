@@ -25,7 +25,7 @@
 		050EAF6B288A869A0017E3CC /* XDLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050EAF6A288A869A0017E3CC /* XDLabel.swift */; };
 		050EAF6D288A8AF10017E3CC /* CollectListReduceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050EAF6C288A8AF10017E3CC /* CollectListReduceCell.swift */; };
 		050EAF72288A8B540017E3CC /* CollectReduceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050EAF71288A8B540017E3CC /* CollectReduceModel.swift */; };
-		050EAF74288A90620017E3CC /* XDCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050EAF73288A90620017E3CC /* XDCollectionView.swift */; };
+		050EAF74288A90620017E3CC /* CollectCacheSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050EAF73288A90620017E3CC /* CollectCacheSize.swift */; };
 		050EAF77288A9AD40017E3CC /* XDLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050EAF76288A9AD40017E3CC /* XDLog.swift */; };
 		050EAF7A288AAC8A0017E3CC /* CollectListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050EAF79288AAC8A0017E3CC /* CollectListViewModel.swift */; };
 		050EAF7C2890E6A00017E3CC /* TableListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050EAF7B2890E6A00017E3CC /* TableListCell.swift */; };
@@ -35,7 +35,9 @@
 		050EAF882890E6FC0017E3CC /* TableListCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050EAF872890E6FC0017E3CC /* TableListCardModel.swift */; };
 		050EAF8B2890E70E0017E3CC /* TableListUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050EAF8A2890E70E0017E3CC /* TableListUserModel.swift */; };
 		050EAF8D2890E8DB0017E3CC /* TableListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050EAF8C2890E8DB0017E3CC /* TableListViewModel.swift */; };
-		050EAF8F28911D580017E3CC /* TableSectionCacheHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050EAF8E28911D580017E3CC /* TableSectionCacheHeight.swift */; };
+		050EAF8F28911D580017E3CC /* TableCacheHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050EAF8E28911D580017E3CC /* TableCacheHeight.swift */; };
+		050EAF9128922E0A0017E3CC /* UICollectionViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050EAF9028922E0A0017E3CC /* UICollectionViewCell+Extension.swift */; };
+		050EAF9328922E1C0017E3CC /* UITableViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050EAF9228922E1C0017E3CC /* UITableViewCell+Extension.swift */; };
 		059A442326A96AFD00C0112B /* CalendarListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059A442226A96AFD00C0112B /* CalendarListVC.swift */; };
 		059A442526AA601C00C0112B /* AirbnbCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059A442426AA601C00C0112B /* AirbnbCalendarView.swift */; };
 		059A442926AA605200C0112B /* CVShowCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059A442826AA605200C0112B /* CVShowCalendarView.swift */; };
@@ -130,7 +132,7 @@
 		050EAF6A288A869A0017E3CC /* XDLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDLabel.swift; sourceTree = "<group>"; };
 		050EAF6C288A8AF10017E3CC /* CollectListReduceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectListReduceCell.swift; sourceTree = "<group>"; };
 		050EAF71288A8B540017E3CC /* CollectReduceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectReduceModel.swift; sourceTree = "<group>"; };
-		050EAF73288A90620017E3CC /* XDCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDCollectionView.swift; sourceTree = "<group>"; };
+		050EAF73288A90620017E3CC /* CollectCacheSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectCacheSize.swift; sourceTree = "<group>"; };
 		050EAF76288A9AD40017E3CC /* XDLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDLog.swift; sourceTree = "<group>"; };
 		050EAF79288AAC8A0017E3CC /* CollectListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectListViewModel.swift; sourceTree = "<group>"; };
 		050EAF7B2890E6A00017E3CC /* TableListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableListCell.swift; sourceTree = "<group>"; };
@@ -140,7 +142,9 @@
 		050EAF872890E6FC0017E3CC /* TableListCardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableListCardModel.swift; sourceTree = "<group>"; };
 		050EAF8A2890E70E0017E3CC /* TableListUserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableListUserModel.swift; sourceTree = "<group>"; };
 		050EAF8C2890E8DB0017E3CC /* TableListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableListViewModel.swift; sourceTree = "<group>"; };
-		050EAF8E28911D580017E3CC /* TableSectionCacheHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableSectionCacheHeight.swift; sourceTree = "<group>"; };
+		050EAF8E28911D580017E3CC /* TableCacheHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCacheHeight.swift; sourceTree = "<group>"; };
+		050EAF9028922E0A0017E3CC /* UICollectionViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Extension.swift"; sourceTree = "<group>"; };
+		050EAF9228922E1C0017E3CC /* UITableViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extension.swift"; sourceTree = "<group>"; };
 		059A442226A96AFD00C0112B /* CalendarListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarListVC.swift; sourceTree = "<group>"; };
 		059A442426AA601C00C0112B /* AirbnbCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirbnbCalendarView.swift; sourceTree = "<group>"; };
 		059A442826AA605200C0112B /* CVShowCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVShowCalendarView.swift; sourceTree = "<group>"; };
@@ -299,7 +303,6 @@
 				050EAF632889592E0017E3CC /* CollectListCardCell.swift */,
 				050EAF6C288A8AF10017E3CC /* CollectListReduceCell.swift */,
 				050EAF5B28894F830017E3CC /* CollectListCell.swift */,
-				050EAF73288A90620017E3CC /* XDCollectionView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -334,7 +337,6 @@
 				050EAF7F2890E6B90017E3CC /* TableListUserCell.swift */,
 				050EAF7D2890E6AE0017E3CC /* TableListCardCell.swift */,
 				050EAF7B2890E6A00017E3CC /* TableListCell.swift */,
-				050EAF8E28911D580017E3CC /* TableSectionCacheHeight.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -363,6 +365,15 @@
 				050EAF8C2890E8DB0017E3CC /* TableListViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		050EAF942892303A0017E3CC /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				050EAF8E28911D580017E3CC /* TableCacheHeight.swift */,
+				050EAF73288A90620017E3CC /* CollectCacheSize.swift */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 		05D68DCD26A9538200988043 /* Calendar */ = {
@@ -413,18 +424,20 @@
 		05D68DD826A9640100988043 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				05D68DD926A9641000988043 /* Date */,
+				E6BC31F32504C86A00CCE02E /* UIButtonExtension.swift */,
+				E6BC31F42504C86A00CCE02E /* UIImageViewExtension.swift */,
+				E6BC31F52504C86A00CCE02E /* UIViewOrdinate.swift */,
+				E6BC31F62504C86A00CCE02E /* UITextViewExtension.swift */,
+				E6BC31F72504C86A00CCE02E /* NSObjectExtension.swift */,
+				E6BC31F82504C86A00CCE02E /* UITextFieldExtension.swift */,
+				E6BC31F92504C86A00CCE02E /* UIFontExtension.swift */,
+				E6BC31FA2504C86A00CCE02E /* StringExtension.swift */,
+				05D68DDA26A9642B00988043 /* Date+Extension.swift */,
 				050EAF4D288900F00017E3CC /* Reusable+Extension.swift */,
+				050EAF9028922E0A0017E3CC /* UICollectionViewCell+Extension.swift */,
+				050EAF9228922E1C0017E3CC /* UITableViewCell+Extension.swift */,
 			);
 			path = Extension;
-			sourceTree = "<group>";
-		};
-		05D68DD926A9641000988043 /* Date */ = {
-			isa = PBXGroup;
-			children = (
-				05D68DDA26A9642B00988043 /* Date+Extension.swift */,
-			);
-			path = Date;
 			sourceTree = "<group>";
 		};
 		11C1A3C7EAEEF6EA993B4EEA /* Pods */ = {
@@ -482,6 +495,7 @@
 				E6BC322D2504C86A00CCE02E /* Resource */,
 				E6BC31ED2504C85C00CCE02E /* Study */,
 				050EAF75288A9AC30017E3CC /* Tool */,
+				050EAF942892303A0017E3CC /* Protocol */,
 				05D68DD826A9640100988043 /* Extension */,
 			);
 			path = Mermaid;
@@ -524,26 +538,10 @@
 		E6BC31F12504C86A00CCE02E /* Expand */ = {
 			isa = PBXGroup;
 			children = (
-				E6BC31F22504C86A00CCE02E /* Category */,
 				E6BC31FB2504C86A00CCE02E /* Network */,
 				E6BC31FE2504C86A00CCE02E /* Tool */,
 			);
 			path = Expand;
-			sourceTree = "<group>";
-		};
-		E6BC31F22504C86A00CCE02E /* Category */ = {
-			isa = PBXGroup;
-			children = (
-				E6BC31F32504C86A00CCE02E /* UIButtonExtension.swift */,
-				E6BC31F42504C86A00CCE02E /* UIImageViewExtension.swift */,
-				E6BC31F52504C86A00CCE02E /* UIViewOrdinate.swift */,
-				E6BC31F62504C86A00CCE02E /* UITextViewExtension.swift */,
-				E6BC31F72504C86A00CCE02E /* NSObjectExtension.swift */,
-				E6BC31F82504C86A00CCE02E /* UITextFieldExtension.swift */,
-				E6BC31F92504C86A00CCE02E /* UIFontExtension.swift */,
-				E6BC31FA2504C86A00CCE02E /* StringExtension.swift */,
-			);
-			path = Category;
 			sourceTree = "<group>";
 		};
 		E6BC31FB2504C86A00CCE02E /* Network */ = {
@@ -997,6 +995,7 @@
 				050EAF5828894CC30017E3CC /* TableListViewController.swift in Sources */,
 				E6BC32482504C86A00CCE02E /* BannerFocusView.swift in Sources */,
 				E6BC323D2504C86A00CCE02E /* XDInterface.swift in Sources */,
+				050EAF9128922E0A0017E3CC /* UICollectionViewCell+Extension.swift in Sources */,
 				050EAF5C28894F830017E3CC /* CollectListCell.swift in Sources */,
 				050EAF77288A9AD40017E3CC /* XDLog.swift in Sources */,
 				E6BC32392504C86A00CCE02E /* NSObjectExtension.swift in Sources */,
@@ -1008,6 +1007,7 @@
 				050EAF68288A86350017E3CC /* CollectListFlowLayout.swift in Sources */,
 				050EAF4E288900F00017E3CC /* Reusable+Extension.swift in Sources */,
 				E6BC325C2504C86A00CCE02E /* Const.swift in Sources */,
+				050EAF9328922E1C0017E3CC /* UITableViewCell+Extension.swift in Sources */,
 				050EAF62288955B70017E3CC /* SectionsModel.swift in Sources */,
 				050EAF54288942AC0017E3CC /* DifferenceListCell3.swift in Sources */,
 				059A442926AA605200C0112B /* CVShowCalendarView.swift in Sources */,
@@ -1021,7 +1021,7 @@
 				E6BC32512504C86A00CCE02E /* MeViewModel.swift in Sources */,
 				E6BC32352504C86A00CCE02E /* UIButtonExtension.swift in Sources */,
 				050EAF50288942990017E3CC /* DifferenceListCell2.swift in Sources */,
-				050EAF74288A90620017E3CC /* XDCollectionView.swift in Sources */,
+				050EAF74288A90620017E3CC /* CollectCacheSize.swift in Sources */,
 				E6BC32462504C86A00CCE02E /* BannerNormalCell.swift in Sources */,
 				E6A72017250B5CC300EB1EB2 /* NFCTool.swift in Sources */,
 				E6BC323C2504C86A00CCE02E /* StringExtension.swift in Sources */,
@@ -1052,7 +1052,7 @@
 				050EAF5E288950300017E3CC /* CollectListModel.swift in Sources */,
 				059A442526AA601C00C0112B /* AirbnbCalendarView.swift in Sources */,
 				E6BC32492504C86A00CCE02E /* TestVC.swift in Sources */,
-				050EAF8F28911D580017E3CC /* TableSectionCacheHeight.swift in Sources */,
+				050EAF8F28911D580017E3CC /* TableCacheHeight.swift in Sources */,
 				050EAF6D288A8AF10017E3CC /* CollectListReduceCell.swift in Sources */,
 				050EAF7C2890E6A00017E3CC /* TableListCell.swift in Sources */,
 				E6BC32452504C86A00CCE02E /* BannerNormalView.swift in Sources */,

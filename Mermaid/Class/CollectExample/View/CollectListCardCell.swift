@@ -45,5 +45,6 @@ class CollectListCardCell: UICollectionViewCell {
     
     func update(model: CollectCardModel) {
         titleLabel.text = model.title
+        titleLabel.numberOfLines = model.isFold ? 1 : 0
     }
 }

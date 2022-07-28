@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CollectListViewController: BaseVC {
+class CollectListViewController: BaseVC, CollectCacheSize {
     private lazy var viewMoel = CollectListViewModel()
     
     private lazy var collectionView: UICollectionView = {
@@ -35,19 +35,6 @@ class CollectListViewController: BaseVC {
     
     private func loadData() {
         viewMoel.loadData()
-    }
-    
-    /// 需要先在cellForItemAt中赋值数据
-    private func calculateCellSize(collectionView: UICollectionView, indexPath: IndexPath) -> CGSize {
-        var width: CGFloat = collectionView.frame.width
-        let calculateCell = self.collectionView(collectionView, cellForItemAt: indexPath)
-        if calculateCell is CollectListCell {
-            width = floor(collectionView.frame.width / 3)
-            return CGSize(width: width, height: 80)
-        }
-        let maxSize = CGSize(width: width, height: collectionView.frame.height)
-        let size = calculateCell.contentView.systemLayoutSizeFitting(maxSize, withHorizontalFittingPriority: .required, verticalFittingPriority: .fittingSizeLevel)
-        return size
     }
 }
 
@@ -80,12 +67,28 @@ extension CollectListViewController: UICollectionViewDelegate, UICollectionViewD
             return cell
         }
     }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        var sectionModel = viewMoel.data[indexPath.section]
+        if sectionModel.identifier == .userCard {
+            clearCellSize(indexPath: indexPath)
+            var model = sectionModel.items[indexPath.item] as! CollectCardModel
+            model.isFold.toggle()
+            sectionModel.items[indexPath.item] = model
+            viewMoel.data[indexPath.section] = sectionModel
+            collectionView.reloadItems(at: [indexPath])
+        }
+    }
 }
 
 extension CollectListViewController: UICollectionViewDelegateFlowLayout {
+    // collectionView roload时会把整个列表全load一遍
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let size = calculateCellSize(collectionView: collectionView, indexPath: indexPath)
-        XDLog.log("indexPath: \(indexPath.section):\(indexPath.row)")
+        let sectionModel = viewMoel.data[indexPath.section]
+        if sectionModel.identifier == .list {
+            let width = floor(collectionView.frame.width / 3)
+            return CGSize(width: width, height: 80)
+        }
+        let size = getCellSize(collectionView: collectionView, indexPath: indexPath)
         return size
     }
 }

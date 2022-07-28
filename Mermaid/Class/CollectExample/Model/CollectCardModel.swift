@@ -10,4 +10,5 @@ import Foundation
 
 struct CollectCardModel {
     var title: String?
+    var isFold = false
 }

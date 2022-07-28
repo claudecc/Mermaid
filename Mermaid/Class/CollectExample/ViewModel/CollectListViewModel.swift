@@ -19,53 +19,12 @@ extension CollectListViewModel {
 
 
 class CollectListViewModel {
-    private(set) var data: [Section] = []
+    var data: [Section] = []
     
     func loadData() {
-        let cardList: [Any] = [
-            CollectCardModel(title: "UserContentUserContentUserContentUserContentUserContentUserContentUserContentUserContentUserContentUserContentUserContentUserContentUserContentUserContent"),
-            CollectCardModel(title: "UserContentUserContentUserContentUserContentUserContentUserContentUserContentUserContentUserContentUserContentUserContentUserContentUserContentUserContent"),
-            CollectCardModel(title: "UserContentUserContentUserContentUserContentUserContentUserContentUserContentUserContentUserContentUserContentUserContentUserContentUserContentUserContent"),
-            CollectCardModel(title: "UserContent"),
-            CollectCardModel(title: "UserContentUserContentUserContentUserContentUserContentUserContentUserContentUserContentUserContentUserContentUserContentUserContentUserContentUserContent"),
-            CollectCardModel(title: "UserContentUserContentUserContentUserContentUserContentUserContentUserContentUserContentUserContentUserContentUserContentUserContentUserContentUserContent"),
-            CollectCardModel(title: "UserContent"),
-        ]
-        let list: [Any] = [
-            CollectListModel(title: "item 1", des: "content"),
-            CollectListModel(title: "item 2", des: "content"),
-            CollectListModel(title: "item 3", des: "content"),
-            CollectListModel(title: "item 1", des: "content"),
-            CollectListModel(title: "item 2", des: "content"),
-            CollectListModel(title: "item 3", des: "content"),
-            CollectListModel(title: "item 1", des: "content"),
-            CollectListModel(title: "item 2", des: "content"),
-            CollectListModel(title: "item 3", des: "content"),
-            CollectListModel(title: "item 1", des: "content"),
-            CollectListModel(title: "item 2", des: "content"),
-            CollectListModel(title: "item 3", des: "content"),
-            CollectListModel(title: "item 1", des: "content"),
-            CollectListModel(title: "item 2", des: "content"),
-            CollectListModel(title: "item 3", des: "content"),
-            CollectListModel(title: "item 4", des: "content"),
-            CollectListModel(title: "item 5", des: "contentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontent"),
-            CollectListModel(title: "item 6", des: "content"),
-        ]
-        let reduceList: [Any] = [
-            CollectReduceModel(title: "content"),
-            CollectReduceModel(title: "contentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontent"),
-            CollectReduceModel(title: "content"),
-            CollectReduceModel(title: "contentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontent"),
-            CollectReduceModel(title: "content"),
-            CollectReduceModel(title: "content"),
-            CollectReduceModel(title: "content"),
-            CollectReduceModel(title: "content"),
-            CollectReduceModel(title: "content"),
-            CollectReduceModel(title: "content"),
-            CollectReduceModel(title: "content"),
-            CollectReduceModel(title: "content"),
-            CollectReduceModel(title: "content"),
-        ]
+        let cardList: [Any] = (1...10).map({ CollectCardModel(title: "\($0) UserContentUserContentUserContentUserContentUserContentUserContentUserContentUserContentUserContentUserContentUserContentUserContentUserContentUserContent") })
+        let list: [Any] = (1...10).map({ CollectListModel(title: "item \($0)", des: "contentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontent") })
+        let reduceList: [Any] = (1...10).map({ CollectReduceModel(title: "\($0) contentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontent") })
         data = [
             SectionsModel(identifier: SectionType.userCard, items: cardList),
             SectionsModel(identifier: SectionType.list, items: list),

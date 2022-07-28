@@ -3,6 +3,6 @@
 #define Demo_codeObfuscation_h
 
 //confuse string at date
-#define testVar XpxvncZahJSJQXNv
+#define testVar HZKjvVKRnKOteIry
 
 #endif

@@ -1,5 +1,5 @@
 //
-//  TableSectionCacheHeight.swift
+//  TableCacheHeight.swift
 //  Mermaid
 //
 //  Created by caixiaodong on 2022/7/27.
@@ -7,6 +7,8 @@
 //
 
 import UIKit
+
+// MARK: - 组列表缓存
 
 protocol TableSectionCacheHeight {
 //    var sectionHeights: [[CGFloat]] { get set }
@@ -93,6 +95,8 @@ extension TableSectionCacheHeight where Self: UIViewController {
         sectionHeights = []
     }
 }
+
+// MARK: - 单列表缓存
 
 protocol TableCacheHeight {
 //    var sectionHeights: [[CGFloat]] { get set }
