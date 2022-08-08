@@ -56,4 +56,6 @@ target 'Mermaid' do
   # 3.4k 2020.3.28, 920KB
   pod 'CVCalendar', '~> 1.7.0'
   
+  # 多页面
+  pod 'DNSPageView'
 end

@@ -24,6 +24,13 @@ class CollectListViewController: BaseVC, CollectCacheSize {
         return view
     }()
     
+    private var data: [CollectListViewModel.Section] {
+        get { viewMoel.data }
+        set {
+            viewMoel.data = newValue
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         loadData()
@@ -40,13 +47,13 @@ class CollectListViewController: BaseVC, CollectCacheSize {
 
 extension CollectListViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        viewMoel.data.count
+        data.count
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        viewMoel.data[section].items.count
+        data[section].items.count
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let sectionModel = viewMoel.data[indexPath.section]
+        let sectionModel = data[indexPath.section]
         switch sectionModel.identifier {
         case .userCard:
             let cell = collectionView.dequeueReusableCell(for: indexPath, cellType: CollectListCardCell.self)
@@ -68,13 +75,13 @@ extension CollectListViewController: UICollectionViewDelegate, UICollectionViewD
         }
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        var sectionModel = viewMoel.data[indexPath.section]
+        var sectionModel = data[indexPath.section]
         if sectionModel.identifier == .userCard {
             clearCellSize(indexPath: indexPath)
             var model = sectionModel.items[indexPath.item] as! CollectCardModel
             model.isFold.toggle()
             sectionModel.items[indexPath.item] = model
-            viewMoel.data[indexPath.section] = sectionModel
+            data[indexPath.section] = sectionModel
             collectionView.reloadItems(at: [indexPath])
         }
     }
@@ -83,7 +90,7 @@ extension CollectListViewController: UICollectionViewDelegate, UICollectionViewD
 extension CollectListViewController: UICollectionViewDelegateFlowLayout {
     // collectionView roload时会把整个列表全load一遍
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let sectionModel = viewMoel.data[indexPath.section]
+        let sectionModel = data[indexPath.section]
         if sectionModel.identifier == .list {
             let width = floor(collectionView.frame.width / 3)
             return CGSize(width: width, height: 80)

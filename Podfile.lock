@@ -11,6 +11,7 @@ PODS:
   - DifferenceKit/UIKitExtension (1.2.0):
     - DifferenceKit/Core
   - Differentiator (4.0.1)
+  - DNSPageView (2.1.0)
   - HandyJSON (5.0.2)
   - HorizonCalendar (1.8.7)
   - JTAppleCalendar (8.0.3)
@@ -56,6 +57,7 @@ DEPENDENCIES:
   - CalendarKit (~> 1.0.11)
   - CVCalendar (~> 1.7.0)
   - DifferenceKit
+  - DNSPageView
   - HandyJSON (~> 5.0.2)
   - HorizonCalendar (~> 1.8.7)
   - JTAppleCalendar (~> 8.0.3)
@@ -83,6 +85,7 @@ SPEC REPOS:
     - CVCalendar
     - DifferenceKit
     - Differentiator
+    - DNSPageView
     - HandyJSON
     - HorizonCalendar
     - JTAppleCalendar
@@ -112,6 +115,7 @@ SPEC CHECKSUMS:
   CVCalendar: 1174c1b43c1a258970e14c1e8b19ef4106c5900b
   DifferenceKit: 5659c430bb7fe45876fa32ce5cba5d6167f0c805
   Differentiator: 886080237d9f87f322641dedbc5be257061b0602
+  DNSPageView: 4d77a61f49a5668ec330fb7bd620d81354371ea7
   HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
   HorizonCalendar: 540345eff35497b46a9d6b14968955cc24677642
   JTAppleCalendar: 932cadea40b1051beab10f67843451d48ba16c99
@@ -133,6 +137,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
   WebViewJavascriptBridge: 7f5bc4d3581e672e8f32bd0f812d54bc69bb8e29
 
-PODFILE CHECKSUM: 11301642e1282aad4d7240b8f20c668dbf7b65f3
+PODFILE CHECKSUM: 6c643e80fc614d7711ca7d8df8a7e87ea0bb9490
 
 COCOAPODS: 1.11.2

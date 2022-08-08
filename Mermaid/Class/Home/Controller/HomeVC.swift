@@ -22,7 +22,8 @@ class HomeVC: BaseVC, UITableViewDelegate, UITableViewDataSource {
         ["name": "日历", "vc": CalendarVC.self],
         ["name": "Difference", "vc": DifferenceViewController.self],
         ["name": "TableListViewController", "vc": TableListViewController.self],
-        ["name": "CollectListViewController", "vc": CollectListViewController.self]
+        ["name": "CollectListViewController", "vc": CollectListViewController.self],
+        ["name": "PageView", "vc": XDPageViewController.self]
     ]
     
     deinit {

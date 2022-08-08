@@ -38,6 +38,7 @@
 		050EAF8F28911D580017E3CC /* TableCacheHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050EAF8E28911D580017E3CC /* TableCacheHeight.swift */; };
 		050EAF9128922E0A0017E3CC /* UICollectionViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050EAF9028922E0A0017E3CC /* UICollectionViewCell+Extension.swift */; };
 		050EAF9328922E1C0017E3CC /* UITableViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050EAF9228922E1C0017E3CC /* UITableViewCell+Extension.swift */; };
+		050EAF9828926C980017E3CC /* XDPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050EAF9728926C980017E3CC /* XDPageViewController.swift */; };
 		059A442326A96AFD00C0112B /* CalendarListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059A442226A96AFD00C0112B /* CalendarListVC.swift */; };
 		059A442526AA601C00C0112B /* AirbnbCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059A442426AA601C00C0112B /* AirbnbCalendarView.swift */; };
 		059A442926AA605200C0112B /* CVShowCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059A442826AA605200C0112B /* CVShowCalendarView.swift */; };
@@ -145,6 +146,7 @@
 		050EAF8E28911D580017E3CC /* TableCacheHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCacheHeight.swift; sourceTree = "<group>"; };
 		050EAF9028922E0A0017E3CC /* UICollectionViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Extension.swift"; sourceTree = "<group>"; };
 		050EAF9228922E1C0017E3CC /* UITableViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extension.swift"; sourceTree = "<group>"; };
+		050EAF9728926C980017E3CC /* XDPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDPageViewController.swift; sourceTree = "<group>"; };
 		059A442226A96AFD00C0112B /* CalendarListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarListVC.swift; sourceTree = "<group>"; };
 		059A442426AA601C00C0112B /* AirbnbCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirbnbCalendarView.swift; sourceTree = "<group>"; };
 		059A442826AA605200C0112B /* CVShowCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVShowCalendarView.swift; sourceTree = "<group>"; };
@@ -376,6 +378,14 @@
 			path = Protocol;
 			sourceTree = "<group>";
 		};
+		050EAF9628926C1F0017E3CC /* PageView */ = {
+			isa = PBXGroup;
+			children = (
+				050EAF9728926C980017E3CC /* XDPageViewController.swift */,
+			);
+			path = PageView;
+			sourceTree = "<group>";
+		};
 		05D68DCD26A9538200988043 /* Calendar */ = {
 			isa = PBXGroup;
 			children = (
@@ -566,6 +576,7 @@
 		E6BC32022504C86A00CCE02E /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				050EAF9628926C1F0017E3CC /* PageView */,
 				050EAF5628894CAB0017E3CC /* CollectExample */,
 				050EAF5528894C8F0017E3CC /* TableExample */,
 				050EAF462888FE450017E3CC /* DifferenceExample */,
@@ -1002,6 +1013,7 @@
 				E6BC32572504C86A00CCE02E /* BaseNavVC.swift in Sources */,
 				050EAF4A2888FEB90017E3CC /* DifferenceListModel.swift in Sources */,
 				050EAF862890E6F10017E3CC /* TableListModel.swift in Sources */,
+				050EAF9828926C980017E3CC /* XDPageViewController.swift in Sources */,
 				05D68DD526A953D800988043 /* XDCalendarView.swift in Sources */,
 				E6BC323B2504C86A00CCE02E /* UIFontExtension.swift in Sources */,
 				050EAF68288A86350017E3CC /* CollectListFlowLayout.swift in Sources */,
