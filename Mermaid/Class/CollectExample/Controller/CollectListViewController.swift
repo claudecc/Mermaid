@@ -6,6 +6,8 @@
 //  Copyright © 2022 claudechoi. All rights reserved.
 //
 
+// try this: https://medium.com/swift2go/implementing-a-dynamic-height-uicollectionviewcell-in-swift-5-bdd912acd5c8
+
 import UIKit
 
 class CollectListViewController: BaseVC, CollectCacheSize {

@@ -39,6 +39,7 @@
 		050EAF9128922E0A0017E3CC /* UICollectionViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050EAF9028922E0A0017E3CC /* UICollectionViewCell+Extension.swift */; };
 		050EAF9328922E1C0017E3CC /* UITableViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050EAF9228922E1C0017E3CC /* UITableViewCell+Extension.swift */; };
 		050EAF9828926C980017E3CC /* XDPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050EAF9728926C980017E3CC /* XDPageViewController.swift */; };
+		050EAFC428B726DD0017E3CC /* TagFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050EAFC328B726DD0017E3CC /* TagFlowLayout.swift */; };
 		059A442326A96AFD00C0112B /* CalendarListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059A442226A96AFD00C0112B /* CalendarListVC.swift */; };
 		059A442526AA601C00C0112B /* AirbnbCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059A442426AA601C00C0112B /* AirbnbCalendarView.swift */; };
 		059A442926AA605200C0112B /* CVShowCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059A442826AA605200C0112B /* CVShowCalendarView.swift */; };
@@ -147,6 +148,7 @@
 		050EAF9028922E0A0017E3CC /* UICollectionViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Extension.swift"; sourceTree = "<group>"; };
 		050EAF9228922E1C0017E3CC /* UITableViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extension.swift"; sourceTree = "<group>"; };
 		050EAF9728926C980017E3CC /* XDPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDPageViewController.swift; sourceTree = "<group>"; };
+		050EAFC328B726DD0017E3CC /* TagFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagFlowLayout.swift; sourceTree = "<group>"; };
 		059A442226A96AFD00C0112B /* CalendarListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarListVC.swift; sourceTree = "<group>"; };
 		059A442426AA601C00C0112B /* AirbnbCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirbnbCalendarView.swift; sourceTree = "<group>"; };
 		059A442826AA605200C0112B /* CVShowCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVShowCalendarView.swift; sourceTree = "<group>"; };
@@ -305,6 +307,7 @@
 				050EAF632889592E0017E3CC /* CollectListCardCell.swift */,
 				050EAF6C288A8AF10017E3CC /* CollectListReduceCell.swift */,
 				050EAF5B28894F830017E3CC /* CollectListCell.swift */,
+				050EAFC328B726DD0017E3CC /* TagFlowLayout.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1057,6 +1060,7 @@
 				E6BC32402504C86A00CCE02E /* Interface.swift in Sources */,
 				E6BC323E2504C86A00CCE02E /* XDNetwork.swift in Sources */,
 				E6BC32382504C86A00CCE02E /* UITextViewExtension.swift in Sources */,
+				050EAFC428B726DD0017E3CC /* TagFlowLayout.swift in Sources */,
 				E6BC324A2504C86A00CCE02E /* TestView.swift in Sources */,
 				E6BC32532504C86A00CCE02E /* MeHeaderView.swift in Sources */,
 				050EAF5A28894CCF0017E3CC /* CollectListViewController.swift in Sources */,
